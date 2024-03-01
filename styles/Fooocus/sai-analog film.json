@@ -1,0 +1,7 @@
+{
+    "name": "sai-analog film",
+    "description": "SAI-\u6a21\u62df\u7535\u5f71",
+    "preview": "sai-analog film.jpg",
+    "prompt": "analog film photo {prompt} . faded film, desaturated, 35mm photo, grainy, vignette, vintage, Kodachrome, Lomography, stained, highly detailed, found footage",
+    "negative": "painting, drawing, illustration, glitch, deformed, mutated, cross-eyed, ugly, disfigured"
+}
