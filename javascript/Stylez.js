@@ -4,6 +4,43 @@ let orgNegative = '';
 let tabname = '';
 let promptNeg = '';
 let promptPos = '';
+let styleCardOrder = [];
+
+function initializeStyleCardOrder() {
+    const styleCards = gradioApp().querySelectorAll('.style_card');
+    styleCardOrder = Array.from(styleCards); // Capture the initial order.
+}
+
+function toggleCardPosition(cardElement) {
+    // 获取父元素来更新DOM
+    const container = cardElement.parentNode;
+    const currentIndex = [...container.children].indexOf(cardElement);
+    const originalIndex = styleCardOrder.indexOf(cardElement); // 保留卡片原始位置的索引
+    const isFront = (currentIndex === 0); // 如果已是最前则返回true
+    
+    if (isFront) {
+        // 如果是第二次点击，移回原始位置
+        container.insertBefore(cardElement, styleCardOrder[originalIndex + 1]); // DOM中移回原始位置
+    } else {
+        // 如果是第一次点击，移动到最前面
+        container.prepend(cardElement);       // DOM中移至最前面
+    }
+}
+
+// 辅助函数，处理点击事件
+function toggleCardPositionOnClick(event) {
+    toggleCardPosition(event.currentTarget); // event.currentTarget是绑定事件的元素
+    event.stopImmediatePropagation(); // 防止事件继续传播
+}
+
+// 绑定点击事件到所有.style_card上
+function setupClickableStyleCards() {
+    const styleCards = gradioApp().querySelectorAll('.style_card');
+    styleCards.forEach(card => {
+        card.removeEventListener('click', toggleCardPositionOnClick); // 防止重复绑定
+        card.addEventListener('click', toggleCardPositionOnClick); // 绑定新的点击事件
+    });
+}
 
 function setupStylez() {
     //create new button (t2i)
@@ -49,6 +86,27 @@ function setupStylez() {
       if (styleztabbtn) {
         styleztabbtn.style.display = "none";
       } 
+    }
+}
+
+function toggleOverlay(cardElement) {
+    // 尝试获取已存在的蒙版
+    let clickOverlay = cardElement.querySelector('.click-overlay');
+    if (!clickOverlay) {
+        // 如果蒙版不存在，创建并追加到 .style_card 上面
+        clickOverlay = document.createElement('div');
+        clickOverlay.classList.add('click-overlay');
+        clickOverlay.style.position = 'absolute';
+        clickOverlay.style.top = '0';
+        clickOverlay.style.left = '0';
+        clickOverlay.style.right = '0';
+        clickOverlay.style.bottom = '0';
+        clickOverlay.style.backgroundColor = 'rgba(0, 64, 1, 0.5)'; // 透明蒙版颜色
+        clickOverlay.style.zIndex = '10'; // 确保蒙版位于最上层
+        cardElement.appendChild(clickOverlay);
+    } else {
+      // 如果蒙版已存在，切换显示与隐藏
+        clickOverlay.style.display = clickOverlay.style.display === 'none' ? 'block' : 'none';
     }
 }
 
@@ -136,6 +194,9 @@ function checkElement() {
     } else {
         setTimeout(checkElement, 100);
     }
+    
+    initializeStyleCardOrder(); // 初始化卡片顺序
+    setupClickableStyleCards(); // 设置.style_card的点击事件
 }
 checkElement();
 

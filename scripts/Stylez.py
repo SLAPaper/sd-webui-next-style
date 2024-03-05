@@ -208,7 +208,7 @@ def generate_html_code():
                                 <div class="favouriteStyleJson">
                                     <button class="favouriteStyleBtn" style="color:{color};" onclick="addFavourite('{subfolder_name}','{encoded_filename}', this)">★</button>
                                 </div>
-                                    <div onclick="applyStyle(`{prompt}`,`{prompt_negative}`,`Stylez`)" onmouseenter="event.stopPropagation(); hoverPreviewStyle(`{prompt}`,`{prompt_negative}`,`Stylez`)" onmouseleave="hoverPreviewStyleOut()" class="styles_overlay"></div>
+                                    <div onclick="toggleOverlay(this); applyStyle(`{prompt}`,`{prompt_negative}`,`Stylez`)" onmouseenter="event.stopPropagation(); hoverPreviewStyle(`{prompt}`,`{prompt_negative}`,`Stylez`)" onmouseleave="hoverPreviewStyleOut()" class="styles_overlay"></div>
                                     <div class="styles_title">{title}</div>
                                     <p class="styles_description">{description}</p>
                                 </img>
