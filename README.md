@@ -10,7 +10,7 @@ I hope the community enjoys and creates their own styles to share.
 #installation 
 
 launch webui normally (make sure your up-to-date) goto Extensions > Install form url and Paste
-https://github.com/javsezlol1/Stylez.git
+https://github.com/Firetheft/Stylez.git
 in the URL for extension's git repository
 
 To use promptgen:
