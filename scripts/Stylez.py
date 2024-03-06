@@ -270,7 +270,7 @@ def tempfolderbox(dropdown):
 
 def filename_check(folder,filename):
     if filename is None or len(filename) == 0 :
-        warning = """<p id="style_filename_check" style="color:red;">please add a file name</p>"""
+        warning = """<p id="style_filename_check" style="color:orange;">disambo.com修改与汉化</p>"""
     else:
         save_folder_path = os.path.join(extension_path, "styles", folder)
         json_file_path = os.path.join(save_folder_path, filename + ".json")
@@ -332,102 +332,102 @@ def add_tab():
     with gr.Blocks(analytics_enabled=False,) as ui:
         with gr.Tabs(elem_id = "Stylez"): 
             gr.HTML("""<div id="stylezPreviewBoxid" class="stylezPreviewBox"><p id="stylezPreviewPositive">test</p><p id="stylezPreviewNegative">test</p></div>""")
-            with gr.TabItem(label="Styles",elem_id="styles_libary"):
+            with gr.TabItem(label="风格",elem_id="styles_libary"):
                 with gr.Column():
                     with gr.Column():
                         with gr.Tabs(elem_id = "libs"):
 
-                            with gr.TabItem(label="Style Libary"):
+                            with gr.TabItem(label="风格库"):
                                 with gr.Row():                      
                                     with gr.Column(elem_id="style_quicklist_column"):
                                         with gr.Row():
-                                            gr.Text("QuickSave",show_label=False)
+                                            gr.Text("快速保存提示词",show_label=False)
                                             with gr.Row():
-                                                stylezquicksave_add = gr.Button("Add" ,elem_classes="stylezquicksave_add")
-                                                stylezquicksave_clear = gr.Button("Clear" ,elem_classes="stylezquicksave_add")
+                                                stylezquicksave_add = gr.Button("添加" ,elem_classes="stylezquicksave_add")
+                                                stylezquicksave_clear = gr.Button("清除" ,elem_classes="stylezquicksave_add")
                                         with gr.Row(elem_id="style_cards_row"):                        
                                                 gr.HTML("""<ul id="styles_quicksave_list"></ul>""")
                                     with gr.Column():
                                         with gr.Row(elem_id="style_search_search"):
-                                            Style_Search = gr.Textbox('', label="Searchbox", elem_id="style_search", placeholder="Search...", elem_classes="textbox", lines=1,scale=3)
-                                            category_dropdown = gr.Dropdown(label="Category", choices=generate_styles_and_tags[1], value="All", lines=1, elem_id="style_Catagory", elem_classes="dropdown styles_dropdown",scale=1)
+                                            Style_Search = gr.Textbox('', label="搜索框", elem_id="style_search", placeholder="搜索...", elem_classes="textbox", lines=1,scale=3)
+                                            category_dropdown = gr.Dropdown(label="风格大类", choices=generate_styles_and_tags[1], value="All", lines=1, elem_id="style_Catagory", elem_classes="dropdown styles_dropdown",scale=1)
                                             refresh_button = gr.Button(refresh_symbol, label="Refresh", elem_id="style_refresh", elem_classes="tool", lines=1)
                                         with gr.Row():
                                             with gr.Column(elem_id="style_cards_column"):
                                                 Styles_html=gr.HTML(generate_styles_and_tags[0])
 
-                            with gr.TabItem(label="CivitAI"):
+                            with gr.TabItem(label="C站热词"):
                                 with gr.Row():
                                     with gr.Column(elem_id="civit_tags_column"):
                                         nsfwlvl = gr.Dropdown(label="NSFW:", choices=["None", "Soft", "Mature", "X"], value="None", lines=1, elem_id="civit_nsfwfilter", elem_classes="dropdown styles_dropdown",scale=1)
-                                        sortcivit  = gr.Dropdown(label="Sort:", choices=["Most Reactions", "Most Comments", "Newest"], value="Most Reactions", lines=1, elem_id="civit_sortfilter", elem_classes="dropdown styles_dropdown",scale=1)
-                                        periodcivit  = gr.Dropdown(label="Period:", choices=["AllTime", "Year", "Month", "Week", "Day"], value="AllTime", lines=1, elem_id="civit_periodfilter", elem_classes="dropdown styles_dropdown",scale=1)
+                                        sortcivit  = gr.Dropdown(label="分类:", choices=["Most Reactions", "Most Comments", "Newest"], value="Most Reactions", lines=1, elem_id="civit_sortfilter", elem_classes="dropdown styles_dropdown",scale=1)
+                                        periodcivit  = gr.Dropdown(label="时间段:", choices=["AllTime", "Year", "Month", "Week", "Day"], value="AllTime", lines=1, elem_id="civit_periodfilter", elem_classes="dropdown styles_dropdown",scale=1)
                                     with gr.Column():
                                         with gr.Row(elem_id="style_search_search"):
-                                            fdg = gr.Textbox('', label="Searchbox", elem_id="style_search", placeholder="DOES NOT WORK! NOT SUPPORTED BY API ", elem_classes="textbox", lines=1,scale=3)
+                                            fdg = gr.Textbox('', label="搜索框", elem_id="style_search", placeholder="不起作用！API不支持！", elem_classes="textbox", lines=1,scale=3)
                                             civitAI_refresh = gr.Button(refresh_symbol, label="Refresh", elem_id="style_refresh", elem_classes="tool", lines=1)
                                             pagenumber = gr.Number(label="Page:",value=1,minimum=1,visible=False)
                                         with gr.Row():
                                             with gr.Column(elem_id="civit_cards_column"):
                                                 gr.HTML(f"""<div><div id="civitaiimages_loading"><p>Loading...</p></div><div onscroll="civitaiaCursorLoad(this)" id="civitai_cardholder" data-nopreview='{nopreview}'></div></div>""")
 
-                            with gr.TabItem(label="Style Generator",elem_id="styles_generator"):
+                            with gr.TabItem(label="风格生成器",elem_id="styles_generator"):
                                 with gr.Row():
                                     with gr.Column():
-                                        style_geninput_txt = gr.Textbox(label="Input:", lines=7,placeholder="Title goes here", elem_classes="stylez_promptgenbox")
+                                        style_geninput_txt = gr.Textbox(label="输入:", lines=7,placeholder="原始正向提示词", elem_classes="stylez_promptgenbox")
                                         with gr.Row():
-                                            style_gengrab_btn = gr.Button("Grab Current",elem_id="style_promptgengrab_btn")
+                                            style_gengrab_btn = gr.Button("获取正向提示词",elem_id="style_promptgengrab_btn")
                                     with gr.Column():
-                                        style_genoutput_txt = gr.Textbox(label="Output:", lines=7,placeholder="Description goes here",elem_classes="stylez_promptgenbox")
+                                        style_genoutput_txt = gr.Textbox(label="输出:", lines=7,placeholder="生成修饰后的正向提示词",elem_classes="stylez_promptgenbox")
                                         with gr.Row():
-                                            style_gen_btn = gr.Button("Generate",elem_id="style_promptgen_btn")
-                                            style_gensend_btn = gr.Button("Send to Prompt",elem_id="style_promptgen_send_btn")
+                                            style_gen_btn = gr.Button("生成",elem_id="style_promptgen_btn")
+                                            style_gensend_btn = gr.Button("应用正向提示词",elem_id="style_promptgen_send_btn")
                                 with gr.Row():
-                                    style_genusecomma_btn = gr.Checkbox(label="Use Commas", value=True)
+                                    style_genusecomma_btn = gr.Checkbox(label="使用逗号", value=True)
                                 with gr.Row():
                                     with gr.Column():
-                                        style_gen_temp = gr.Slider(label="Temperature (Higher = More Diverse But Less Coherent): ", minimum=0.1, maximum=1.0 ,value=0.9)
-                                        style_gen_top_k = gr.Slider(label="top_k (Number Of Tokens To Sample Per Step):", minimum=1, maximum=50 ,value=8,step=1)
+                                        style_gen_temp = gr.Slider(label="温度（越高 = 多样性更高但一致性较低）: ", minimum=0.1, maximum=1.0 ,value=0.9)
+                                        style_gen_top_k = gr.Slider(label="top_k（每步采样的令牌数量）:", minimum=1, maximum=50 ,value=8,step=1)
                                     with gr.Column():
-                                        style_max_length = gr.Slider(label="Maximum Number Of Tokens:", minimum=1, maximum=160 ,value=80,step=1)
-                                        style_gen_repitition_penalty = gr.Slider(label="Repitition Penalty:", minimum=0.1, maximum=2 ,value=1.2,step=0.1)
+                                        style_max_length = gr.Slider(label="最大令牌数量:", minimum=1, maximum=160 ,value=80,step=1)
+                                        style_gen_repitition_penalty = gr.Slider(label="重复惩罚:", minimum=0.1, maximum=2 ,value=1.2,step=0.1)
                     with gr.Row(elem_id="stylesPreviewRow"):
-                        gr.Checkbox(value=True,label="Apply/Remove Prompt", elem_id="styles_apply_prompt", elem_classes="styles_checkbox checkbox", lines=1)
-                        gr.Checkbox(value=True,label="Apply/Remove Negative", elem_id="styles_apply_neg", elem_classes="styles_checkbox checkbox", lines=1)
-                        gr.Checkbox(value=True,label="Hover Over Preview", elem_id="HoverOverStyle_preview", elem_classes="styles_checkbox checkbox", lines=1)
-                        oldstylesCB = gr.Checkbox(value=hideoldstyles,label="Hide Styles Bar", elem_id="hide_default_styles", elem_classes="styles_checkbox checkbox", lines=1,interactive=True)
+                        gr.Checkbox(value=True,label="应用/移除正向提示词", elem_id="styles_apply_prompt", elem_classes="styles_checkbox checkbox", lines=1)
+                        gr.Checkbox(value=True,label="应用/移除负向提示词", elem_id="styles_apply_neg", elem_classes="styles_checkbox checkbox", lines=1)
+                        gr.Checkbox(value=True,label="悬停预览", elem_id="HoverOverStyle_preview", elem_classes="styles_checkbox checkbox", lines=1)
+                        oldstylesCB = gr.Checkbox(value=hideoldstyles,label="隐藏原始样式栏", elem_id="hide_default_styles", elem_classes="styles_checkbox checkbox", lines=1,interactive=True)
                         setattr(oldstylesCB,"do_not_save_to_config",True)
-                        card_size_slider = gr.Slider(value=card_size_value,minimum=card_size_min,maximum=card_size_max,label="Size:", elem_id="card_thumb_size")
+                        card_size_slider = gr.Slider(value=card_size_value,minimum=card_size_min,maximum=card_size_max,label="预览尺寸:", elem_id="card_thumb_size")
                         setattr(card_size_slider,"do_not_save_to_config",True)
                     with gr.Row(elem_id="stylesPreviewRow"):
                         favourite_temp = gr.Text(elem_id="favouriteTempTxt",interactive=False,label="Positive:",lines=2,visible=False)
                         add_favourite_btn = gr.Button(elem_id="stylezAddFavourite",visible=False)
                         remove_favourite_btn = gr.Button(elem_id="stylezRemoveFavourite",visible=False)
-            with gr.TabItem(label="Style Editor",elem_id="styles_editor"):
+            with gr.TabItem(label="风格编辑器",elem_id="styles_editor"):
                 with gr.Row():
                     with gr.Column():
-                        style_title_txt = gr.Textbox(label="Title:", lines=1,placeholder="Title goes here",elem_id="style_title_txt")
-                        style_description_txt = gr.Textbox(label="Description:", lines=1,placeholder="Description goes here", elem_id="style_description_txt")
-                        style_prompt_txt = gr.Textbox(label="Prompt:", lines=2,placeholder="Prompt goes here", elem_id="style_prompt_txt")
-                        style_negative_txt = gr.Textbox(label="Negative:", lines=2,placeholder="Negative goes here", elem_id="style_negative_txt")
+                        style_title_txt = gr.Textbox(label="标题:", lines=1,placeholder="标题放在这里！",elem_id="style_title_txt")
+                        style_description_txt = gr.Textbox(label="描述:", lines=1,placeholder="描述放在这里！", elem_id="style_description_txt")
+                        style_prompt_txt = gr.Textbox(label="正向提示词:", lines=2,placeholder="正向提示词放在这里！", elem_id="style_prompt_txt")
+                        style_negative_txt = gr.Textbox(label="负向提示词:", lines=2,placeholder="负向提示词放在这里！", elem_id="style_negative_txt")
                     with gr.Column():
                         with gr.Row():
-                            style_save_btn = gr.Button(save_symbol,label="Save Style", lines=1,elem_classes="tool", elem_id="style_save_btn")
-                            style_clear_btn = gr.Button(clear_symbol,label="Clear", lines=1,elem_classes="tool" ,elem_id="style_clear_btn")
-                            style_delete_btn = gr.Button(delete_style,label="Delete Style", lines=1,elem_classes="tool", elem_id="style_delete_btn")
-                        thumbnailbox = gr.Image(value=None,label="Thumbnail (Please use 1:1 images):",elem_id="style_thumbnailbox",elem_classes="image",interactive=True,type='pil')
+                            style_save_btn = gr.Button(save_symbol,label="保存风格", lines=1,elem_classes="tool", elem_id="style_save_btn")
+                            style_clear_btn = gr.Button(clear_symbol,label="重新编辑", lines=1,elem_classes="tool" ,elem_id="style_clear_btn")
+                            style_delete_btn = gr.Button(delete_style,label="删除风格", lines=1,elem_classes="tool", elem_id="style_delete_btn")
+                        thumbnailbox = gr.Image(value=None,label="缩略图（请使用1:1图片）:",elem_id="style_thumbnailbox",elem_classes="image",interactive=True,type='pil')
                         style_img_url_txt = gr.Text(label=None,lines=1,placeholder="Invisible textbox", elem_id="style_img_url_txt",visible=False)
                 with gr.Row():
-                    style_grab_current_btn = gr.Button("Grab Prompts",label="Grab Current", lines=1, elem_id="style_grab_current_btn")
-                    style_lastgen_btn =gr.Button("Grab Last Generated Image",label="Save Style", lines=1,elem_id="style_lastgen_btn")
+                    style_grab_current_btn = gr.Button("获取提示词",label="Grab Current", lines=1, elem_id="style_grab_current_btn")
+                    style_lastgen_btn =gr.Button("获取最新生成图片",label="Save Style", lines=1,elem_id="style_lastgen_btn")
                 with gr.Row():
                     with gr.Column():
-                            style_filename_txt = gr.Textbox(label="Filename Name:", lines=1,placeholder="Filename", elem_id="style_filename_txt")
-                            style_filname_check = gr.HTML("""<p id="style_filename_check" style="color:red;">Please Add a Filename</p>""",elem_id="style_filename_check_container")
+                            style_filename_txt = gr.Textbox(label="文件名命名:", lines=1,placeholder="文件名", elem_id="style_filename_txt")
+                            style_filname_check = gr.HTML("""<p id="style_filename_check" style="color:orange;">disambo.com修改与汉化</p>""",elem_id="style_filename_check_container")
                     with gr.Column():
                         with gr.Row():
                             style_savefolder_refrsh_btn = gr.Button(refresh_symbol, label="Refresh", lines=1,elem_classes="tool")
-                            style_savefolder_txt = gr.Dropdown(label="Save Folder (Type To Create A New Folder):", value="Styles", lines=1, choices=generate_styles_and_tags[2], elem_id="style_savefolder_txt", elem_classes="dropdown",allow_custom_value=True)
+                            style_savefolder_txt = gr.Dropdown(label="保存至文件夹（可输入创建新文件夹）:", value="Styles", lines=1, choices=generate_styles_and_tags[2], elem_id="style_savefolder_txt", elem_classes="dropdown",allow_custom_value=True)
                             style_savefolder_temp = gr.Textbox(label="Save Folder:", lines=1, elem_id="style_savefolder_temp",visible=False)
         civitAI_refresh.click(fn=None,_js="refreshfetchCivitai",inputs=[nsfwlvl,sortcivit,periodcivit])
         periodcivit.change(fn=None,_js="refreshfetchCivitai",inputs=[nsfwlvl,sortcivit,periodcivit])

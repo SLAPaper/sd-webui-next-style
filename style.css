@@ -18,7 +18,7 @@
 .EditStyleJson{z-index: 9999;position: absolute;background-color: #00000094 !important;right: 0;bottom: 0; padding: 5px !important;}
 .favouriteStyleJson{z-index: 9999;position: absolute;left: 0;bottom: 0; padding: 5px !important;}
 #style_command_btn_row{width: fit-content !important;align-self: end;}
-#style_filename_check_container{top:-20px;}
+#style_filename_check_container{top:0px;left:650px;}
 #gradio_style_savefolder_row{top: -35px;position: relative !important;}
 .styles_checkbox{max-width: fit-content;min-width: unset !important;}
 .styles_dropdown > label > div{background-color: #00000042 !important;}
