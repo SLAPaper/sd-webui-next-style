@@ -7,7 +7,7 @@
 .style_card:hover {box-shadow: 0px 0px 12px 1px var(--button-primary-background-fill) !important;}
 .styles_thumbnail{height:inherit !important; width:auto; object-fit: contain;}
 .styles_title{pointer-events: none;position: absolute;top: 0;left: 0;background:#00000094; padding: 2px;font-size: 11px;}
-.styles_description{pointer-events: none;position: fixed;text-align: center; opacity: 0; transition:opacity 0.5s ease;}
+.styles_description{pointer-events: none;position: fixed;text-align: center;color: #ffff00 !important;opacity: 0; transition:opacity 0.5s ease;}
 .style_card:hover .styles_description{ opacity: 1; }
 #txt2img_styles_popout > div{left: 0.3vw;flex-flow: column;}
 #img2img_styles_popout > div{left: 0.3vw;flex-flow: column;}

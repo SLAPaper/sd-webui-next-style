@@ -1,6 +1,6 @@
 {
     "name": "sai-anime",
-    "description": "SAI-\u52a8\u6f2b",
+    "description": "SAI\u2022\u52a8\u6f2b",
     "preview": "sai-anime.jpg",
     "prompt": "anime artwork {prompt} . anime style, key visual, vibrant, studio anime, highly detailed",
     "negative": "photo, deformed, black and white, realism, disfigured, low contrast"

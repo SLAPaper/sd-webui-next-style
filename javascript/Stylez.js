@@ -472,7 +472,7 @@ function editStyle(title, img, description, prompt, promptNeggative, folder, fil
     function findEditorButton() {
         const buttons = tabsdiv.querySelectorAll('button');
         for (const button of buttons) {
-            if (button.innerText === 'Style Editor') {
+            if (button.innerText === '风格编辑器') {
                 return button;
             }
         }
