@@ -20,7 +20,7 @@ function toggleCardPosition(cardElement) {
     
     if (isFront) {
         // 如果是第二次点击，移回原始位置
-        container.insertBefore(cardElement, styleCardOrder[originalIndex + 1]); // DOM中移回原始位置
+        container.insertBefore(cardElement, styleCardOrder[originalIndex + 0]); // 设置为0为当前位置不动，设置为1移回原始位置
     } else {
         // 如果是第一次点击，移动到最前面
         container.prepend(cardElement);       // DOM中移至最前面

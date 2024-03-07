@@ -275,9 +275,9 @@ def filename_check(folder,filename):
         save_folder_path = os.path.join(extension_path, "styles", folder)
         json_file_path = os.path.join(save_folder_path, filename + ".json")
         if os.path.exists(json_file_path):
-            warning = f"""<p id="style_filename_check" style="color:red;">Overwrite!! File Already Exists In '{folder}'</p>"""
+            warning = f"""<p id="style_filename_check" style="color:red;">文件已添加到 '{folder}'</p>"""
         else:
-            warning = """<p id="style_filename_check" style="color:green;">Filename Is Valid</p>"""
+            warning = """<p id="style_filename_check" style="color:green;">文件名有效</p>"""
     return gr.update(value=warning)
 
 def clear_style():
