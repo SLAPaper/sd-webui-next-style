@@ -12,14 +12,16 @@
 - [x] 改进风格卡片选择的交互性，对已选择风格进行标记。
 - [ ] 改进风格卡片选择的交互性，将已选择风格卡片进行顶置。
 - [ ] 加入工作流框架。
-<img src="https://bu.dusays.com/2024/03/09/65eb37a3ae677.png" alt="Alt text" title="Optional title">
+
+<img src="https://bu.dusays.com/2024/03/09/65eb37a3ae677.png">
 
 # 安装 
 
 ### 插件安装
 
 >正常启动webui（确保您的webui是最新的）点开扩展>从网址安装>并将 https://github.com/Firetheft/sd-webui-next-style.git 粘贴到扩展的git仓库网址中，然后点击安装。最后记得应用更改并重启！
-<img src="https://bu.dusays.com/2024/03/08/65eb0fa98a046.gif" alt="Alt text" title="Optional title">
+
+<img src="https://bu.dusays.com/2024/03/08/65eb0fa98a046.gif">
 
 ### 风格生成器模型下载
 
@@ -33,5 +35,5 @@
 
 sd-webui-next-style安装在extensions文件夹中，它使用一些CSS和JS来删除旧的风格。但是不要担心，在第一次启动时，所有保存的风格都会转换为单独的JSON文件。这将允许您将它们与库一起使用。添加空白预览图像，以便以后根据需要进行更改。
 
-<img src="https://bu.dusays.com/2024/03/08/65eb0f527b1e0.gif" alt="Alt text" title="Optional title">
+<img src="https://bu.dusays.com/2024/03/08/65eb0f527b1e0.gif">
 
