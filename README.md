@@ -1,73 +1,37 @@
-# Stylez
+# sd-webui-next-style
 
-Created a styles library with 600+ artists already included.
+这是一个适用于SD WebUI的多样绘画风格选择器，现有近千种风格可供选择！
 
-I hope the community enjoys and creates their own styles to share.
+这个插件基于下面这个项目：
 
-<img src="screenshots/Screenshot 2023-10-03 141019.png" alt="Alt text" title="Optional title">
+>https://github.com/javsezlol1/Stylez
 
+我所进行的修改：
+- [x] 添加Fooocus全部风格模板，删除预设风格中的重复项。
+- [x] 对插件界面进行完全汉化。
+- [x] 改进风格卡片选择的交互性，对已选择风格进行标记。
+- [ ] 改进风格卡片选择的交互性，将已选择风格卡片进行顶置。
+- [ ] 加入工作流框架。
+<img src="https://bu.dusays.com/2024/03/09/65eb37a3ae677.png" alt="Alt text" title="Optional title">
 
-#installation 
+# 安装 
 
-launch webui normally (make sure your up-to-date) goto Extensions > Install form url and Paste
-https://github.com/Firetheft/Stylez.git
-in the URL for extension's git repository
+### 插件安装
 
-To use promptgen:
-git clone https://huggingface.co/FredZhang7/distilgpt2-stable-diffusion-v2 to extension/stylez folder
+>正常启动webui（确保您的webui是最新的）点开扩展>从网址安装>并将 https://github.com/Firetheft/sd-webui-next-style.git 粘贴到扩展的git仓库网址中，然后点击安装。最后记得应用更改并重启！
+<img src="https://bu.dusays.com/2024/03/08/65eb0fa98a046.gif" alt="Alt text" title="Optional title">
 
+### 风格生成器模型下载
 
-#Usage
+>打开extension/sd-webui-next-style文件夹，右键打开power shell
 
-Stylez is installed into the extensions folder, and it uses some CSS and JS to remove the old styles.
-the old styles will be replaced by this button
+>首先输入：git lfs installgit
 
-<img src="screenshots/Screenshot 2023-10-03 141150.png" alt="Alt text" title="Optional title">
+>然后输入：git clone https://huggingface.co/FredZhang7/distilgpt2-stable-diffusion-v2
 
-Don’t worry though on first launch all your saved styles will be converted into individual JSON files.
-This will allow you to use them with the library. Adding blank preview images to later be changed if desired.
+# 使用
 
-#Features:
+sd-webui-next-style安装在extensions文件夹中，它使用一些CSS和JS来删除旧的风格。但是不要担心，在第一次启动时，所有保存的风格都会转换为单独的JSON文件。这将允许您将它们与库一起使用。添加空白预览图像，以便以后根据需要进行更改。
 
-Keyword:
-Any prompts containing the keyword: {prompt} will automatically take you current prompt and instert it in place of the {prompt}.
-
-  Example:
-  
-  prompt:
-      
-      a red house
-      
-applying the style 3d model will result in: 
-
-    professional 3d model a red house octane render, highly detailed, volumetric, dramatic lighting.
-PromptGen:
-New Feature for generating prompts
-using https://huggingface.co/FredZhang7/distilgpt2-stable-diffusion-v2
-
-to install, git clone the link above to extension/stylez folder
-
-<img src="screenshots/Screenshot 2023-10-123.png" alt="Alt text" title="Optional title">
-Quicksave:
-New feature added for temporaily saving prompts.
-<img src="screenshots/Screenshot 2023-10-04 191935.png" alt="Alt text" title="Optional title">
-
-
-Add: Will add your current positive and negatives to a list
-Clear: Clears the list
-❌: Will delete the selected quicksave
-
-to apply your prompts back simply click either the upper propmt or lower prompt within the quicksave
-
-NOTE: these are only stored temporarily and will be deleted on relauch or refresh of the page!!!
-
-Auto Convert:
-Auto convert all your styles in your csv to JSON files ready for use with the library.
-
-Categories:
-Any folder within \Stylez\styles will be considered a category on the Stylez UI for easy sorting.
-
-Styles Editor:
-used to create styles grabbing current prompts as well as last generated images.
-allows deletion and overwriting of existing images.
+<img src="https://bu.dusays.com/2024/03/08/65eb0f527b1e0.gif" alt="Alt text" title="Optional title">
 
