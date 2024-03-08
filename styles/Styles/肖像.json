@@ -2,6 +2,6 @@
     "name": "\u8096\u50cf",
     "description": "\u4eba\u7269\u8096\u50cf",
     "preview": "\u8096\u50cf.jpg",
-    "prompt": "{prompt}, (Best quality, masterpiece, original, very detailed 8K wallpaper) ,2.5D,(absurd), (very detailed), (illustrations), (detail light), (high-level), (solo: 1.4), (8K), (exquisite CG), (master's work), (contours), ((exquisite facial details)), <lora:offset_0.2:0.1>",
-    "negative": "text,watermark,worst quality:1.6,(low quality:1.6),(normal quality:1.6),lowres,bad anatomy,bad hands,vaginas in breasts,((monochrome)),((grayscale)),collapsed eyeshadow,multiple eyebrow,(cropped),oversaturated,extra limb,missing limbs,deformed hands,long neck,long body,imperfect,(bad hands),signature,watermark,username,"
+    "prompt": "(Best quality, masterpiece, original, very detailed 8K wallpaper), 2.5D, (absurd), (very detailed), (illustrations), (detail light), (high-level), (solo:1.4), (8K), (exquisite CG), (master's work), (contours), ((exquisite facial details)), <lora:offset_0.2:0.1>",
+    "negative": "text, watermark, (worst quality:1.6), (low quality:1.6), (normal quality:1.6), lowres, bad anatomy, bad hands, vaginas in breasts, ((monochrome)), ((grayscale)), collapsed eyeshadow, multiple eyebrow, (cropped), oversaturated, extra limb, missing limbs, deformed hands, long neck, long body, imperfect, (bad hands), signature, watermark, username"
 }

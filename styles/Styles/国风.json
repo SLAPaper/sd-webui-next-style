@@ -3,5 +3,5 @@
     "description": "\u56fd\u98ce\u4eba\u7269",
     "preview": "\u56fd\u98ce.jpg",
     "prompt": "Chinese landscape painting, A painting of {prompt}, flowers, home cut, black straight hair, long hair, bun, Hanfu, light cream green, all over, with a simple background of plants, looking away, minimalist and antique style, <lora:offset_0.2:0.1>",
-    "negative": "text, watermark, worst quality:1.6, (low quality:1.6), (normal quality:1.6), lowres, bad anatomy, bad hands, vaginas in breasts, ((monochrome)), ((grayscale)), collapsed eyeshadow, multiple eyebrow, (cropped), oversaturated, extra limb, missing limbs, deformed hands, long neck, long body, imperfect, (bad hands), signature, watermark, username, (realistic characters:1.6)"
+    "negative": "text, watermark, (worst quality:1.6), (low quality:1.6), (normal quality:1.6), lowres, bad anatomy, bad hands, vaginas in breasts, ((monochrome)), ((grayscale)), collapsed eyeshadow, multiple eyebrow, (cropped), oversaturated, extra limb, missing limbs, deformed hands, long neck, long body, imperfect, (bad hands), signature, watermark, username, (realistic characters:1.6)"
 }

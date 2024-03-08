@@ -2,6 +2,6 @@
     "name": "\u53ef\u7231",
     "description": "\u53ef\u7231\u753b\u98ce",
     "preview": "\u53ef\u7231.jpg",
-    "prompt": "{prompt}, two point perspective, in the style of cute cartoonish designs, pop mart, clay material, soft smooth lighting, detailed science fiction illustrations, hyper-realistic details, dotted, clean solid color background, c4d, <lora:offset_0.2:0.1>",
-    "negative": "text, watermark, worst quality:1.6, (low quality:1.6), (normal quality:1.6), lowres, bad anatomy, bad hands, vaginas in breasts, ((monochrome)), ((grayscale)), collapsed eyeshadow, multiple eyebrow, (cropped), oversaturated, extra limb, missing limbs, deformed hands, long neck, long body, imperfect, (bad hands), signature, watermark, username"
+    "prompt": "two point perspective, in the style of cute cartoonish designs, pop mart, clay material, soft smooth lighting, detailed science fiction illustrations, hyper-realistic details, dotted, clean solid color background, c4d, <lora:offset_0.2:0.1>",
+    "negative": "text, watermark, (worst quality:1.6), (low quality:1.6), (normal quality:1.6), lowres, bad anatomy, bad hands, vaginas in breasts, ((monochrome)), ((grayscale)), collapsed eyeshadow, multiple eyebrow, (cropped), oversaturated, extra limb, missing limbs, deformed hands, long neck, long body, imperfect, (bad hands), signature, watermark, username"
 }

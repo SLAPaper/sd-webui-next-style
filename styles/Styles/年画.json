@@ -2,6 +2,6 @@
     "name": "\u5e74\u753b",
     "description": "\u5e74\u753b",
     "preview": "\u5e74\u753b.jpg",
-    "prompt": "Goldeneast, illustrations, Chinese ink painting, mythology, childhood memories, farmer paintings, Feng Zikai, textbook illustrations, Eastern poetry and painting, Chinese New Year paintings, Republic of China illustrations, Chinese countryside, winter, {prompt}, <lora:offset_0.2:0.1>",
+    "prompt": "Goldeneast, illustrations, Chinese ink painting, a painting of {prompt}, mythology, childhood memories, farmer paintings, Feng Zikai, textbook illustrations, Eastern poetry and painting, Chinese New Year paintings, Republic of China illustrations, Chinese countryside, winter, <lora:offset_0.2:0.1>",
     "negative": "Japanese clothing, Korean clothing, text, watermark, worst quality:1.6, (low quality:1.6), (normal quality:1.6), lowres, bad anatomy, bad hands, vaginas in breasts, ((monochrome)), ((grayscale)), collapsed eyeshadow, multiple eyebrow, (cropped), oversaturated, extra limb, missing limbs, deformed hands, long neck, long body, imperfect, (bad hands), signature, watermark, username"
 }

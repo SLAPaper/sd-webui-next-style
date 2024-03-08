@@ -2,6 +2,6 @@
     "name": "\u5199\u5b9e",
     "description": "\u5199\u5b9e\u98ce\u683c",
     "preview": "\u5199\u5b9e.jpg",
-    "prompt": "{prompt}, (Masterpiece), (Best Quality), (High Quality), (Realistic), (Realistic), (Official Art), (Extremely Detailed), <lora:offset_0.2:0.1>",
-    "negative": "text,watermark,worst quality:1.6,(low quality:1.6),(normal quality:1.6),lowres,bad anatomy,bad hands,vaginas in breasts,((monochrome)),((grayscale)),collapsed eyeshadow,multiple eyebrow,(cropped),oversaturated,extra limb,missing limbs,deformed hands,long neck,long body,imperfect,(bad hands),signature,watermark,username,"
+    "prompt": "(Masterpiece), (Best Quality), (High Quality), (Realistic), (Realistic), (Official Art), (Extremely Detailed), <lora:offset_0.2:0.1>",
+    "negative": "text, watermark, (worst quality:1.6), (low quality:1.6), (normal quality:1.6), lowres, bad anatomy, bad hands, vaginas in breasts, ((monochrome)), ((grayscale)), collapsed eyeshadow, multiple eyebrow, (cropped), oversaturated, extra limb, missing limbs, deformed hands, long neck, long body, imperfect, (bad hands), signature, watermark, username"
 }

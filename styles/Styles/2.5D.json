@@ -2,6 +2,6 @@
     "name": "2.5D",
     "description": "2.5D\u98ce\u683c",
     "preview": "2.5D.jpg",
-    "prompt": "(Best quality, masterpiece, original, very detailed 8K wallpaper) (surplus), (very detailed), (illustration), (detail light), (advanced), (solo: 1.4), (8K), (exit CG), (master work), (resources), (Pixar style), {prompt}, <lora:offset_0.2:0.1>",
-    "negative": "text,watermark,worst quality:1.6,(low quality:1.6),(normal quality:1.6),lowres,bad anatomy,bad hands,vaginas in breasts,((monochrome)),((grayscale)),collapsed eyeshadow,multiple eyebrow,(cropped),oversaturated,extra limb,missing limbs,deformed hands,long neck,long body,imperfect,(bad hands),signature,watermark,username,"
+    "prompt": "(Best quality, masterpiece, original, very detailed 8K wallpaper), (surplus), (very detailed), (illustration), (detail light), (advanced), (solo:1.4), (8K), (exit CG), (master work), (resources), (Pixar style), <lora:offset_0.2:0.1>",
+    "negative": "text, watermark, (worst quality:1.6), (low quality:1.6), (normal quality:1.6), lowres, bad anatomy, bad hands, vaginas in breasts, ((monochrome)), ((grayscale)), collapsed eyeshadow, multiple eyebrow, (cropped), oversaturated, extra limb, missing limbs, deformed hands, long neck, long body, imperfect, (bad hands), signature, watermark, username"
 }

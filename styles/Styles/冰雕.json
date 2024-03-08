@@ -2,6 +2,6 @@
     "name": "\u51b0\u96d5",
     "description": "\u51b0\u96d5\u98ce\u683c",
     "preview": "\u51b0\u96d5.jpg",
-    "prompt": "Concept design, {prompt}, decorated with ice, ice legs, emitting light blue to light green light, glowing, smooth transition, 3D model, masterpiece, super detail, super quality, clear details, octagonal rendering, 4K, lim_light, gray background, cute, animal ice sculpture, frozen beauty, crystal clear details, side view, ice light, frost light, Antony Gormley , <lora:offset_0.2:0.1>",
+    "prompt": "{prompt} statue made out of ice, Concept design, decorated with ice, ice legs, emitting light blue to light green light, glowing, smooth transition, 3D model, masterpiece, super detail, super quality, clear details, octagonal rendering, 4K, lim_light, gray background, cute, frozen beauty, crystal clear details, side view, ice light, frost light, Antony Gormley, <lora:offset_0.2:0.1>",
     "negative": "text, watermark, worst quality:1.6, (low quality:1.6), (normal quality:1.6), lowres, bad anatomy, bad hands, vaginas in breasts, ((monochrome)), ((grayscale)), collapsed eyeshadow, multiple eyebrow, (cropped), oversaturated, extra limb, missing limbs, deformed hands, long neck, long body, imperfect, (bad hands), signature, watermark, username"
 }
