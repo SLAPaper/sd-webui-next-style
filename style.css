@@ -45,3 +45,21 @@
 .stylez_promptgenbox > label > textarea{ overflow-y: scroll;max-height: 168px !important;min-height: 168px;}
 #civitaiimages_loading{text-align-last: center;position: absolute;z-index: 9;background: #000000bd;width: -webkit-fill-available;height: -webkit-fill-available;backdrop-filter: blur(5px);}
 #civitaiimages_loading p{margin: 0;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%); color: var(--button-primary-background-fill);font-size: 50px;text-shadow: 0 0 20px #fff0, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;}
+.style_card_checkbox {
+    position: absolute;
+    top: 5px; /* or whatever spacing you prefer */
+    right: 5px; /* or whatever spacing you prefer */
+    cursor: pointer;
+    display: none; /* initially hide the checkbox */
+    user-select: none;
+    color: #00ff00 !important;
+}
+
+.style_card_checkbox.checked {
+    display: block; /* show the checkbox when it is checked */
+}
+
+.style_card.selected {
+    /* Insert styling for selected cards here - can include border color change etc */
+    border: 5px solid #00ff00; /* example green border for the selected card */
+}

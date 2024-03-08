@@ -201,6 +201,7 @@ def generate_html_code():
                                 color = "#ffffff"
                             style_html += f"""
                             <div class="style_card" data-category='{subfolder_name}' data-title='{titlelower}' style="min-height:{card_size_value}px;max-height:{card_size_value}px;min-width:{card_size_value}px;max-width:{card_size_value}px;">
+                                <div class="style_card_checkbox" onclick="toggleCardSelection(event, '{subfolder_name}','{encoded_filename}')">◉</div>  <!-- 这里添加勾选框 -->
                                 <img class="styles_thumbnail" src="{"file=" + img +"?timestamp"+ formatted_time}" alt="{title} Preview">
                                 <div class="EditStyleJson">
                                     <button onclick="editStyle(`{title}`,`{imghack}`,`{description}`,`{prompt}`,`{prompt_negative}`,`{subfolder_name}`,`{encoded_filename}`,`Stylez`)">🖉</button>
@@ -208,7 +209,7 @@ def generate_html_code():
                                 <div class="favouriteStyleJson">
                                     <button class="favouriteStyleBtn" style="color:{color};" onclick="addFavourite('{subfolder_name}','{encoded_filename}', this)">★</button>
                                 </div>
-                                    <div onclick="toggleOverlay(this); applyStyle(`{prompt}`,`{prompt_negative}`,`Stylez`)" onmouseenter="event.stopPropagation(); hoverPreviewStyle(`{prompt}`,`{prompt_negative}`,`Stylez`)" onmouseleave="hoverPreviewStyleOut()" class="styles_overlay"></div>
+                                    <div onclick="applyStyle(`{prompt}`,`{prompt_negative}`,`Stylez`)" onmouseenter="event.stopPropagation(); hoverPreviewStyle(`{prompt}`,`{prompt_negative}`,`Stylez`)" onmouseleave="hoverPreviewStyleOut()" class="styles_overlay"></div>
                                     <div class="styles_title">{title}</div>
                                     <p class="styles_description">{description}</p>
                                 </img>
@@ -427,7 +428,7 @@ def add_tab():
                     with gr.Column():
                         with gr.Row():
                             style_savefolder_refrsh_btn = gr.Button(refresh_symbol, label="Refresh", lines=1,elem_classes="tool")
-                            style_savefolder_txt = gr.Dropdown(label="保存至文件夹（可输入创建新文件夹）:", value="Styles", lines=1, choices=generate_styles_and_tags[2], elem_id="style_savefolder_txt", elem_classes="dropdown",allow_custom_value=True)
+                            style_savefolder_txt = gr.Dropdown(label="保存至文件夹（建议使用字母命名文件夹）:", value="Styles", lines=1, choices=generate_styles_and_tags[2], elem_id="style_savefolder_txt", elem_classes="dropdown",allow_custom_value=True)
                             style_savefolder_temp = gr.Textbox(label="Save Folder:", lines=1, elem_id="style_savefolder_temp",visible=False)
         civitAI_refresh.click(fn=None,_js="refreshfetchCivitai",inputs=[nsfwlvl,sortcivit,periodcivit])
         periodcivit.change(fn=None,_js="refreshfetchCivitai",inputs=[nsfwlvl,sortcivit,periodcivit])
