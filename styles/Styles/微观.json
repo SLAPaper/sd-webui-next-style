@@ -1,0 +1,7 @@
+{
+    "name": "\u5fae\u89c2",
+    "description": "\u5fae\u7f29\u666f\u89c2",
+    "preview": "\u5fae\u89c2.jpg",
+    "prompt": "top down shot of {prompt}, delicate details, vivid scene, lovely style, cute, sweet, soft atmosphere, Microlandscape, Miniature World , <lora:offset_0.2:0.1>",
+    "negative": "text, watermark, worst quality:1.6, (low quality:1.6), (normal quality:1.6), lowres, bad anatomy, bad hands, vaginas in breasts, ((monochrome)), ((grayscale)), collapsed eyeshadow, multiple eyebrow, (cropped), oversaturated, extra limb, missing limbs, deformed hands, long neck, long body, imperfect, (bad hands), signature, watermark, username"
+}

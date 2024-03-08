@@ -1,0 +1,7 @@
+{
+    "name": "\u9ed1\u767d",
+    "description": "\u9ed1\u767d\u6f2b\u753b",
+    "preview": "\u9ed1\u767d.jpg",
+    "prompt": "A dynamic, black-and-white graphic novel scene with intense action, {prompt}, dramatic shadows, and captivating characters, <lora:offset_0.2:0.1>",
+    "negative": "text, watermark, worst quality:1.6, (low quality:1.6), (normal quality:1.6), lowres, bad anatomy, bad hands, vaginas in breasts, ((monochrome)), ((grayscale)), collapsed eyeshadow, multiple eyebrow, (cropped), oversaturated, extra limb, missing limbs, deformed hands, long neck, long body, imperfect, (bad hands), signature, watermark, username"
+}
