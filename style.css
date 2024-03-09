@@ -63,3 +63,45 @@
     /* Insert styling for selected cards here - can include border color change etc */
     border: 5px solid #00ff00; /* example green border for the selected card */
 }
+
+/* 假设你想要在屏幕宽度小于1440px时隐藏该元素 */
+@media screen and (max-width: 1440px) {
+    #style_quicklist_column {
+        display: none;
+    }
+}
+
+/* 假设你想要在屏幕宽度小于1440px时隐藏该元素 */
+@media screen and (max-width: 1318px) {
+    #HoverOverStyle_preview {
+        display: none;
+    }
+}
+
+/* 假设你想要在屏幕宽度小于1440px时隐藏该元素 */
+@media screen and (max-width: 1618px) {
+    #hide_default_styles {
+        display: none;
+    }
+}
+
+/* 假设你想要在屏幕宽度小于1440px时隐藏该元素 */
+@media screen and (max-width: 1098px) {
+    #styles_apply_neg {
+        display: none;
+    }
+}
+
+/* 假设你想要在屏幕宽度小于1440px时隐藏该元素 */
+@media screen and (max-width: 818px) {
+    #styles_apply_prompt {
+        display: none;
+    }
+}
+
+/* 假设你想要在屏幕宽度小于1440px时隐藏该元素 */
+@media screen and (max-width: 818px) {
+    #card_thumb_size {
+        display: none;
+    }
+}
