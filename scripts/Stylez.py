@@ -271,14 +271,14 @@ def tempfolderbox(dropdown):
 
 def filename_check(folder,filename):
     if filename is None or len(filename) == 0 :
-        warning = """<p id="style_filename_check" style="color:orange;">disambo.com修改与汉化</p>"""
+        warning = """<p id="style_filename_check" style="color:orange;">请输入文件名！！！</p>"""
     else:
         save_folder_path = os.path.join(extension_path, "styles", folder)
         json_file_path = os.path.join(save_folder_path, filename + ".json")
         if os.path.exists(json_file_path):
-            warning = f"""<p id="style_filename_check" style="color:red;">文件已添加到 '{folder}'</p>"""
+            warning = f"""<p id="style_filename_check" style="color:green;">文件已添加到 '{folder}'</p>"""
         else:
-            warning = """<p id="style_filename_check" style="color:green;">文件名有效</p>"""
+            warning = """<p id="style_filename_check" style="color:green;">文件名有效！！！</p>"""
     return gr.update(value=warning)
 
 def clear_style():
@@ -375,11 +375,11 @@ def add_tab():
                             with gr.TabItem(label="风格生成器",elem_id="styles_generator"):
                                 with gr.Row():
                                     with gr.Column():
-                                        style_geninput_txt = gr.Textbox(label="输入:", lines=7,placeholder="原始正向提示词", elem_classes="stylez_promptgenbox")
+                                        style_geninput_txt = gr.Textbox(label="输入:", lines=7,placeholder="在这里输入原始正向提示词。确保你已经下载生成器所需依赖模型后再点击生成按钮！具体操作可查看注意事项。", elem_classes="stylez_promptgenbox")
                                         with gr.Row():
                                             style_gengrab_btn = gr.Button("获取正向提示词",elem_id="style_promptgengrab_btn")
                                     with gr.Column():
-                                        style_genoutput_txt = gr.Textbox(label="输出:", lines=7,placeholder="生成修饰后的正向提示词",elem_classes="stylez_promptgenbox")
+                                        style_genoutput_txt = gr.Textbox(label="输出:", lines=7,placeholder="生成润色后的正向提示词",elem_classes="stylez_promptgenbox")
                                         with gr.Row():
                                             style_gen_btn = gr.Button("生成",elem_id="style_promptgen_btn")
                                             style_gensend_btn = gr.Button("应用正向提示词",elem_id="style_promptgen_send_btn")
@@ -388,9 +388,9 @@ def add_tab():
                                 with gr.Row():
                                     with gr.Column():
                                         style_gen_temp = gr.Slider(label="温度（越高 = 多样性更高但一致性较低）: ", minimum=0.1, maximum=1.0 ,value=0.9)
-                                        style_gen_top_k = gr.Slider(label="top_k（每步采样的令牌数量）:", minimum=1, maximum=50 ,value=8,step=1)
+                                        style_gen_top_k = gr.Slider(label="top_k（每步采样的字符数量）:", minimum=1, maximum=50 ,value=8,step=1)
                                     with gr.Column():
-                                        style_max_length = gr.Slider(label="最大令牌数量:", minimum=1, maximum=160 ,value=80,step=1)
+                                        style_max_length = gr.Slider(label="最大字符数量:", minimum=1, maximum=160 ,value=80,step=1)
                                         style_gen_repitition_penalty = gr.Slider(label="重复惩罚:", minimum=0.1, maximum=2 ,value=1.2,step=0.1)
                     with gr.Row(elem_id="stylesPreviewRow"):
                         gr.Checkbox(value=True,label="应用/移除正向提示词", elem_id="styles_apply_prompt", elem_classes="styles_checkbox checkbox", lines=1)
@@ -424,12 +424,24 @@ def add_tab():
                 with gr.Row():
                     with gr.Column():
                             style_filename_txt = gr.Textbox(label="文件名命名:", lines=1,placeholder="文件名", elem_id="style_filename_txt")
-                            style_filname_check = gr.HTML("""<p id="style_filename_check" style="color:orange;">disambo.com修改与汉化</p>""",elem_id="style_filename_check_container")
+                            style_filname_check = gr.HTML("""<p id="style_filename_check" style="color:orange;">请输入文件名！！！</p>""",elem_id="style_filename_check_container")
                     with gr.Column():
                         with gr.Row():
                             style_savefolder_refrsh_btn = gr.Button(refresh_symbol, label="Refresh", lines=1,elem_classes="tool")
                             style_savefolder_txt = gr.Dropdown(label="保存至文件夹（建议使用字母命名文件夹）:", value="Styles", lines=1, choices=generate_styles_and_tags[2], elem_id="style_savefolder_txt", elem_classes="dropdown",allow_custom_value=True)
                             style_savefolder_temp = gr.Textbox(label="Save Folder:", lines=1, elem_id="style_savefolder_temp",visible=False)
+            with gr.TabItem(label="注意"):  # 新增的Tab标题
+                #gr.Text(value="https://www.disambo.com", label="标题", interactive=False)  # 只读文本
+                gr.Markdown("""
+                <p style="color: #F36812; font-size: 18px; margin-bottom: 8px;">注意事项：</p>
+                <p style="margin-bottom: 8px;"><span style="color: #F36812;">1. </span>此插件提示词全部采用标准格式，如果你安装了<span style="color: #F36812;">All in one</span>这个插件，请打开设置菜单点击第二个图标进行Prompt格式调整（勾选第二项去除Prompt最后的一个逗号，其他项全部取消勾选。）</p>
+                <p style="margin-bottom: 8px;"><span style="color: #F36812;">2. </span>如果你想使用风格生成器对提示词进行润色，必须先下载运行依赖模型<span style="color: #F36812;">distilgpt2-stable-diffusion-v2</span>，把文件夹解压到extension/sd-webui-next-style文件夹下，你可以按命令行的提示从<a href="https://huggingface.co/FredZhang7/distilgpt2-stable-diffusion-v2/tree/main" style="color: #F36812;">huggingface</a>下载。如果你不会魔法，我这里也提供了一个无需魔法的地址，请点击<a href="https://daohuo-my.sharepoint.com/:u:/g/personal/ruanjian_daohuo_onmicrosoft_com/EfixWV7-fkRKtArpadqjqtsBRq7ttRVSGCVrwsMb2tUWcA?e=roW8xB" style="color: green;">下载</a></p>
+                <p style="margin-bottom: 8px;"><span style="color: #F36812;">3. </span>风格编辑小技巧：任何包含关键字<span style="color: #F36812;">{prompt}</span>的提示都将自动获取你当前的提示，并将其插入到<span style="color: #F36812;">{prompt}</span>的位置。一个简单的示例，你有一个风格的提示词是这样写的<span style="color: Gray;">A dynamic, black-and-white graphic novel scene with intense action, a paiting of {prompt}</span>，现在你在正向提示词中输入<span style="color: Gray;">Several stray cats</span>,当你应用这个风格模板后，正向提示词会变成<span style="color: Gray;">A dynamic, black-and-white graphic novel scene with intense action, a paiting of Several stray cats</span>。总之，如果你想自己编辑风格模板，可以先看看现有模板的格式。
+                <p style="margin-bottom: 8px;"><span style="color: #F36812;">4. </span>如果用的愉快请点击下面图标收藏哦！顺便也可以逛逛我的个人网站<a href="https://www.disambo.com" style="color: green;">disambo.com</a></p>
+                <a href="https://github.com/Firetheft/sd-webui-next-style" target="_blank">
+                    <img src="https://bu.dusays.com/2024/03/10/65edbb64b1ece.png" alt="GitHub" style="height: 24px; width: 24px; margin-right: 8px;"/>
+                </a>
+                """, interactive=False)
         civitAI_refresh.click(fn=None,_js="refreshfetchCivitai",inputs=[nsfwlvl,sortcivit,periodcivit])
         periodcivit.change(fn=None,_js="refreshfetchCivitai",inputs=[nsfwlvl,sortcivit,periodcivit])
         sortcivit.change(fn=None,_js="refreshfetchCivitai",inputs=[nsfwlvl,sortcivit,periodcivit])
