@@ -357,20 +357,20 @@ def add_tab():
                                             with gr.Column(elem_id="style_cards_column"):
                                                 Styles_html=gr.HTML(generate_styles_and_tags[0])
 
-                            with gr.TabItem(label="C站热词"):
-                                with gr.Row():
-                                    with gr.Column(elem_id="civit_tags_column"):
-                                        nsfwlvl = gr.Dropdown(label="NSFW:", choices=["None", "Soft", "Mature", "X"], value="None", lines=1, elem_id="civit_nsfwfilter", elem_classes="dropdown styles_dropdown",scale=1)
-                                        sortcivit  = gr.Dropdown(label="分类:", choices=["Most Reactions", "Most Comments", "Newest"], value="Most Reactions", lines=1, elem_id="civit_sortfilter", elem_classes="dropdown styles_dropdown",scale=1)
-                                        periodcivit  = gr.Dropdown(label="时间段:", choices=["AllTime", "Year", "Month", "Week", "Day"], value="AllTime", lines=1, elem_id="civit_periodfilter", elem_classes="dropdown styles_dropdown",scale=1)
-                                    with gr.Column():
-                                        with gr.Row(elem_id="style_search_search"):
-                                            fdg = gr.Textbox('', label="搜索框", elem_id="style_search", placeholder="不起作用！API不支持！", elem_classes="textbox", lines=1,scale=3)
-                                            civitAI_refresh = gr.Button(refresh_symbol, label="Refresh", elem_id="style_refresh", elem_classes="tool", lines=1)
-                                            pagenumber = gr.Number(label="Page:",value=1,minimum=1,visible=False)
-                                        with gr.Row():
-                                            with gr.Column(elem_id="civit_cards_column"):
-                                                gr.HTML(f"""<div><div id="civitaiimages_loading"><p>Loading...</p></div><div onscroll="civitaiaCursorLoad(this)" id="civitai_cardholder" data-nopreview='{nopreview}'></div></div>""")
+                            #with gr.TabItem(label="C站热词"):
+                            #    with gr.Row():
+                            #        with gr.Column(elem_id="civit_tags_column"):
+                            #            nsfwlvl = gr.Dropdown(label="NSFW:", choices=["None", "Soft", "Mature", "X"], value="None", lines=1, elem_id="civit_nsfwfilter", elem_classes="dropdown styles_dropdown",scale=1)
+                            #            sortcivit  = gr.Dropdown(label="分类:", choices=["Most Reactions", "Most Comments", "Newest"], value="Most Reactions", lines=1, elem_id="civit_sortfilter", elem_classes="dropdown styles_dropdown",scale=1)
+                            #            periodcivit  = gr.Dropdown(label="时间段:", choices=["AllTime", "Year", "Month", "Week", "Day"], value="AllTime", lines=1, elem_id="civit_periodfilter", elem_classes="dropdown styles_dropdown",scale=1)
+                            #        with gr.Column():
+                            #            with gr.Row(elem_id="style_search_search"):
+                            #                fdg = gr.Textbox('', label="搜索框", elem_id="style_search", placeholder="不起作用！API不支持！", elem_classes="textbox", lines=1,scale=3)
+                            #                civitAI_refresh = gr.Button(refresh_symbol, label="Refresh", elem_id="style_refresh", elem_classes="tool", lines=1)
+                            #                pagenumber = gr.Number(label="Page:",value=1,minimum=1,visible=False)
+                            #            with gr.Row():
+                            #                with gr.Column(elem_id="civit_cards_column"):
+                            #                    gr.HTML(f"""<div><div id="civitaiimages_loading"><p>Loading...</p></div><div onscroll="civitaiaCursorLoad(this)" id="civitai_cardholder" data-nopreview='{nopreview}'></div></div>""")
 
                             with gr.TabItem(label="风格生成器",elem_id="styles_generator"):
                                 with gr.Row():
@@ -443,10 +443,10 @@ def add_tab():
                     <img src="https://bu.dusays.com/2024/03/10/65edbb64b1ece.png" alt="GitHub" style="height: 24px; width: 24px; margin-right: 8px;"/>
                 </a>
                 """, interactive=False)
-        civitAI_refresh.click(fn=None,_js="refreshfetchCivitai",inputs=[nsfwlvl,sortcivit,periodcivit])
-        periodcivit.change(fn=None,_js="refreshfetchCivitai",inputs=[nsfwlvl,sortcivit,periodcivit])
-        sortcivit.change(fn=None,_js="refreshfetchCivitai",inputs=[nsfwlvl,sortcivit,periodcivit])
-        nsfwlvl.change(fn=None,_js="refreshfetchCivitai",inputs=[nsfwlvl,sortcivit,periodcivit])
+        #civitAI_refresh.click(fn=None,_js="refreshfetchCivitai",inputs=[nsfwlvl,sortcivit,periodcivit])
+        #periodcivit.change(fn=None,_js="refreshfetchCivitai",inputs=[nsfwlvl,sortcivit,periodcivit])
+        #sortcivit.change(fn=None,_js="refreshfetchCivitai",inputs=[nsfwlvl,sortcivit,periodcivit])
+        #nsfwlvl.change(fn=None,_js="refreshfetchCivitai",inputs=[nsfwlvl,sortcivit,periodcivit])
         style_gengrab_btn.click(fn=None,_js="stylesgrabprompt" ,outputs=[style_geninput_txt])
         style_gensend_btn.click(fn=None,_js='sendToPromtbox',inputs=[style_genoutput_txt])
         style_gen_btn.click(fn=generate_style,inputs=[style_geninput_txt,style_gen_temp,style_gen_top_k,style_max_length,style_gen_repitition_penalty,style_genusecomma_btn],outputs=[style_genoutput_txt])
