@@ -428,7 +428,7 @@ def add_tab():
                     with gr.Column():
                         with gr.Row():
                             style_savefolder_refrsh_btn = gr.Button(refresh_symbol, label="Refresh", lines=1,elem_classes="tool")
-                            style_savefolder_txt = gr.Dropdown(label="保存至文件夹（建议使用字母命名文件夹）:", value="Styles", lines=1, choices=generate_styles_and_tags[2], elem_id="style_savefolder_txt", elem_classes="dropdown",allow_custom_value=True)
+                            style_savefolder_txt = gr.Dropdown(label="保存至文件夹（非中文命名）:", value="Styles", lines=1, choices=generate_styles_and_tags[2], elem_id="style_savefolder_txt", elem_classes="dropdown",allow_custom_value=True)
                             style_savefolder_temp = gr.Textbox(label="Save Folder:", lines=1, elem_id="style_savefolder_temp",visible=False)
             with gr.TabItem(label="注意"):  # 新增的Tab标题
                 #gr.Text(value="https://www.disambo.com", label="标题", interactive=False)  # 只读文本
