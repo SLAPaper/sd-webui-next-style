@@ -32,7 +32,7 @@ def save_card_def(value):
     
 if not os.path.exists(config_json):
     default_config = {
-        "card_size": 120,
+        "card_size": 112,
         "card_size_min": 50,
         "card_size_max": 200,
         "autoconvert": True,
@@ -427,9 +427,9 @@ def add_tab():
                             style_filname_check = gr.HTML("""<p id="style_filename_check" style="color:orange;">请输入文件名！！！</p>""",elem_id="style_filename_check_container")
                     with gr.Column():
                         with gr.Row():
-                            style_savefolder_refrsh_btn = gr.Button(refresh_symbol, label="Refresh", lines=1,elem_classes="tool")
                             style_savefolder_txt = gr.Dropdown(label="保存至文件夹（非中文命名）:", value="Styles", lines=1, choices=generate_styles_and_tags[2], elem_id="style_savefolder_txt", elem_classes="dropdown",allow_custom_value=True)
                             style_savefolder_temp = gr.Textbox(label="Save Folder:", lines=1, elem_id="style_savefolder_temp",visible=False)
+                        style_savefolder_refrsh_btn = gr.Button(refresh_symbol, label="Refresh", lines=1,elem_classes="tool")
             with gr.TabItem(label="注意"):  # 新增的Tab标题
                 #gr.Text(value="https://www.disambo.com", label="标题", interactive=False)  # 只读文本
                 gr.Markdown("""

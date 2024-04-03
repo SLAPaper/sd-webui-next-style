@@ -1,0 +1,7 @@
+{
+    "name": "Gothic Revival-style",
+    "description": "\u54e5\u7279\u590d\u5174\u98ce\u683c",
+    "preview": "Gothic Revival-style.jpg",
+    "prompt": "a Gothic Revival-style {prompt}, best quality, highly detailed, masterpiece, ultra-detailed, 4k, CG rendering, Off-Center, <lora:offset_0.2:0.1>",
+    "negative": "bad, ugly, deformed, noisy, blurry, low contrast, lowres, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username"
+}

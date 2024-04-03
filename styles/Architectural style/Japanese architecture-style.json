@@ -1,0 +1,7 @@
+{
+    "name": "Japanese architecture-style",
+    "description": "\u65e5\u672c\u4f20\u7edf\u5efa\u7b51",
+    "preview": "Japanese architecture-style.jpg",
+    "prompt": "a Japanese architecture-style {prompt}, best quality, highly detailed, masterpiece, ultra-detailed, 4k, CG rendering, (landscape:1.6), Off-Center, <lora:offset_0.2:0.1>",
+    "negative": "bad, ugly, deformed, noisy, blurry, low contrast, lowres, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username"
+}

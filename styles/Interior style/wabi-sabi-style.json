@@ -1,0 +1,7 @@
+{
+    "name": "wabi-sabi-style",
+    "description": "\u4f98\u5bc2\u98ce\u683c",
+    "preview": "wabi-sabi-style.jpg",
+    "prompt": "a wabi-sabi-style {prompt}, best quality, highly detailed, masterpiece, ultra-detailed, 4k, CG rendering, Off-Center, <lora:offset_0.2:0.1>",
+    "negative": "bad, ugly, deformed, noisy, blurry, low contrast, lowres, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username"
+}

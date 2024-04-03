@@ -1,0 +1,7 @@
+{
+    "name": "minimalist modern-style",
+    "description": "\u73b0\u4ee3\u7b80\u7ea6\u98ce\u683c",
+    "preview": "minimalist modern-style.jpg",
+    "prompt": "a minimalist modern-style {prompt} with clean lines, best quality, masterpiece, ultra-detailed, 4k, CG rendering, Off-Center, <lora:offset_0.2:0.1>",
+    "negative": "bad, ugly, deformed, noisy, blurry, low contrast, lowres, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username"
+}

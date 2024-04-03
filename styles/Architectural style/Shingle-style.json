@@ -1,0 +1,7 @@
+{
+    "name": "Shingle-style",
+    "description": "\u74e6\u7247\u98ce\u683c\u5efa\u7b51",
+    "preview": "Shingle-style.jpg",
+    "prompt": "a Shingle-style {prompt}, best quality, highly detailed, masterpiece, ultra-detailed, 4k, CG rendering, (landscape:1.6), Off-Center, <lora:offset_0.2:0.1>",
+    "negative": "bad, ugly, deformed, noisy, blurry, low contrast, lowres, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username"
+}

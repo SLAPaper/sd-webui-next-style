@@ -1,0 +1,7 @@
+{
+    "name": "Chinese rustic-style",
+    "description": "\u4e2d\u5f0f\u7530\u56ed\u98ce\u683c",
+    "preview": "Chinese rustic-style.jpg",
+    "prompt": "a Chinese rustic-style {prompt}, best quality, highly detailed, masterpiece, ultra-detailed, 4k, CG rendering, Off-Center, <lora:offset_0.2:0.1>",
+    "negative": "bad, ugly, deformed, noisy, blurry, low contrast, lowres, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username"
+}

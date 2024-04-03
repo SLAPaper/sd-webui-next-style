@@ -1,0 +1,7 @@
+{
+    "name": "Black and white-style",
+    "description": "\u9ed1\u767d\u98ce\u683c",
+    "preview": "Black and white-style.jpg",
+    "prompt": "a Chic and minimalist Black and white-style {prompt} with clean lines, best quality, masterpiece, ultra-detailed, 4k, CG rendering, Off-Center, <lora:offset_0.2:0.1>",
+    "negative": "bad, ugly, deformed, noisy, blurry, low contrast, lowres, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username"
+}

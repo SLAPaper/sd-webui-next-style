@@ -1,0 +1,7 @@
+{
+    "name": "Victorian architecture-style",
+    "description": "\u7ef4\u591a\u5229\u4e9a\u5f0f\u5efa\u7b51",
+    "preview": "Victorian architecture-style.jpg",
+    "prompt": "a Victorian architecture-style {prompt}, best quality, highly detailed, masterpiece, ultra-detailed, 4k, CG rendering, Off-Center, <lora:offset_0.2:0.1>",
+    "negative": "bad, ugly, deformed, noisy, blurry, low contrast, lowres, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username"
+}

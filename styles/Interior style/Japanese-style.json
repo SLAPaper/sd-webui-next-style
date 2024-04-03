@@ -1,0 +1,7 @@
+{
+    "name": "Japanese-style",
+    "description": "\u65e5\u5f0f\u98ce\u683c",
+    "preview": "Japanese-style.jpg",
+    "prompt": "A Japanese-style {prompt}, best quality, highly detailed, masterpiece, ultra-detailed, 4k, CG rendering, Off-Center, <lora:offset_0.2:0.1>",
+    "negative": "bad, ugly, deformed, noisy, blurry, low contrast, lowres, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username"
+}
