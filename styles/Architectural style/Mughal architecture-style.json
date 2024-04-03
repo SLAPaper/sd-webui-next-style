@@ -1,7 +1,0 @@
-{
-    "name": "Mughal architecture-style",
-    "description": "\u83ab\u5367\u513f\u5efa\u7b51",
-    "preview": "Mughal architecture-style.jpg",
-    "prompt": "an elegant Mughal architecture-style {prompt} with red sandstone and white marble, bulbous domes and ogive arches, Taj Mahal-esque, best quality, highly detailed, masterpiece, ultra-detailed, 4k, CG rendering, (landscape:1.6), Off-Center, <lora:offset_0.2:0.1>",
-    "negative": "bad, ugly, deformed, noisy, blurry, low contrast, lowres, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username"
-}

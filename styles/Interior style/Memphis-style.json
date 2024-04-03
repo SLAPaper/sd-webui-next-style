@@ -1,7 +1,0 @@
-{
-    "name": "Memphis-style",
-    "description": "\u5b5f\u83f2\u65af\u98ce\u683c",
-    "preview": "Memphis-style.jpg",
-    "prompt": "a Ettore Sottsass-style {prompt} with clean lines, Modern minimalist-style, Vivid, saturated colors and bold color combinations, Incorporates flat, linear, geometric, and other abstract vector elements, Geometric color blocks on walls, Bold contrast between background and subject matter, best quality, highly detailed, masterpiece, ultra-detailed, 4k, CG rendering, Off-Center, <lora:offset_0.2:0.1>",
-    "negative": "bad, ugly, deformed, noisy, blurry, low contrast, lowres, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username"
-}

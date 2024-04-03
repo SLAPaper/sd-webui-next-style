@@ -1,7 +1,0 @@
-{
-    "name": "Fatimid architecture-style",
-    "description": "\u6cd5\u8482\u739b\u5efa\u7b51",
-    "preview": "Fatimid architecture-style.jpg",
-    "prompt": "a Fatimid architecture-style {prompt}, best quality, highly detailed, masterpiece, ultra-detailed, 4k, CG rendering, (landscape:1.6), Off-Center, <lora:offset_0.2:0.1>",
-    "negative": "bad, ugly, deformed, noisy, blurry, low contrast, lowres, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username"
-}

@@ -1,7 +1,0 @@
-{
-    "name": "Indian rock-cut architecture-style",
-    "description": "\u5370\u5ea6\u5ca9\u77f3\u5207\u5272\u5efa\u7b51",
-    "preview": "Indian rock-cut architecture-style.jpg",
-    "prompt": "an Indian rock-cut architecture-style {prompt}, the structure coheres beautifully with its surroundings, best quality, highly detailed, masterpiece, ultra-detailed, 4k, CG rendering, (landscape:1.6), Off-Center, <lora:offset_0.2:0.1>",
-    "negative": "bad, ugly, deformed, noisy, blurry, low contrast, lowres, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username"
-}

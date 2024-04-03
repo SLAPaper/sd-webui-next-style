@@ -1,7 +1,0 @@
-{
-    "name": "South American-style",
-    "description": "\u5357\u7f8e\u6d32\u98ce\u683c",
-    "preview": "South American-style.jpg",
-    "prompt": "a South American-style {prompt}, best quality, highly detailed, masterpiece, ultra-detailed, 4k, CG rendering, Off-Center, <lora:offset_0.2:0.1>",
-    "negative": "bad, ugly, deformed, noisy, blurry, low contrast, lowres, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username"
-}

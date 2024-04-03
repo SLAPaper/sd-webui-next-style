@@ -1,7 +1,0 @@
-{
-    "name": "Neoclassical Architecture-style",
-    "description": "\u65b0\u53e4\u5178\u4e3b\u4e49\u5efa\u7b51",
-    "preview": "Neoclassical Architecture-style.jpg",
-    "prompt": "a Neoclassical Architecture-style {prompt}, best quality, highly detailed, masterpiece, ultra-detailed, 4k, CG rendering, (landscape:1.6), Off-Center, <lora:offset_0.2:0.1>",
-    "negative": "bad, ugly, deformed, noisy, blurry, low contrast, lowres, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username"
-}

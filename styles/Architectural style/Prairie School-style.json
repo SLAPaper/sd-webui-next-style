@@ -1,7 +1,0 @@
-{
-    "name": "Prairie School-style",
-    "description": "\u8349\u539f\u5b66\u6d3e\u5efa\u7b51",
-    "preview": "Prairie School-style.jpg",
-    "prompt": "a Prairie School-style {prompt}, best quality, highly detailed, masterpiece, ultra-detailed, 4k, CG rendering, (landscape:1.6), Off-Center, <lora:offset_0.2:0.1>",
-    "negative": "bad, ugly, deformed, noisy, blurry, low contrast, lowres, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username"
-}

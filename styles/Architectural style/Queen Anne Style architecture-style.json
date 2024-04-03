@@ -1,7 +1,0 @@
-{
-    "name": "Queen Anne Style architecture-style",
-    "description": "\u5b89\u59ae\u5973\u738b\u5f0f\u5efa\u7b51",
-    "preview": "Queen Anne Style architecture-style.jpg",
-    "prompt": "a Queen Anne Style architecture-style {prompt}, best quality, highly detailed, masterpiece, ultra-detailed, 4k, CG rendering, (landscape:1.6), Off-Center, <lora:offset_0.2:0.1>",
-    "negative": "bad, ugly, deformed, noisy, blurry, low contrast, lowres, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username"
-}

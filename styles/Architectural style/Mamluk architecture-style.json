@@ -1,7 +1,0 @@
-{
-    "name": "Mamluk architecture-style",
-    "description": "\u9a6c\u6728\u7559\u514b\u5efa\u7b51",
-    "preview": "Mamluk architecture-style.jpg",
-    "prompt": "a Mamluk architecture-style {prompt} with stone bricks, stucco decoration, funerary dome, minaret, entrance portals, best quality, highly detailed, masterpiece, ultra-detailed, 4k, CG rendering, (landscape:1.6), Off-Center, <lora:offset_0.2:0.1>",
-    "negative": "bad, ugly, deformed, noisy, blurry, low contrast, lowres, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username"
-}
