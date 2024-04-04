@@ -2,7 +2,7 @@
     "name": "George Inness",
     "description": "art by George Inness",
     "preview": "George Inness.jpg",
-    "prompt": "art by George Inness",
+    "prompt": "art by George Inness, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

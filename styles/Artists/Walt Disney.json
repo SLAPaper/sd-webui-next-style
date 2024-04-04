@@ -2,7 +2,7 @@
     "name": "Walt Disney",
     "description": "art by Walt Disney",
     "preview": "Walt Disney.jpg",
-    "prompt": "art by Walt Disney",
+    "prompt": "art by Walt Disney, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

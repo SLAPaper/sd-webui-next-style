@@ -2,7 +2,7 @@
     "name": "Tomek Setowski",
     "description": "art by Tomek Setowski",
     "preview": "Tomek Setowski.jpg",
-    "prompt": "art by Tomek Setowski",
+    "prompt": "art by Tomek Setowski, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

@@ -2,7 +2,7 @@
     "name": "Tommaso Dolabella",
     "description": "art by Tommaso Dolabella",
     "preview": "Tommaso Dolabella.jpg",
-    "prompt": "art by Tommaso Dolabella",
+    "prompt": "art by Tommaso Dolabella, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

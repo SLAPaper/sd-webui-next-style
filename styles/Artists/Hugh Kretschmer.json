@@ -2,6 +2,6 @@
     "name": "Hugh Kretschmer",
     "description": "art by Hugh Kretschmer",
     "preview": "Hugh Kretschmer.jpg",
-    "prompt": "art by Hugh Kretschmer",
+    "prompt": "art by Hugh Kretschmer, a painting depicting {prompt}",
     "negative": ""
 }

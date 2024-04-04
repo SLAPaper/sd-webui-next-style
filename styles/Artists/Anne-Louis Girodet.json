@@ -2,7 +2,7 @@
     "name": "Anne-Louis Girodet",
     "description": "art by Anne-Louis Girodet",
     "preview": "Anne-Louis Girodet.jpg",
-    "prompt": "art by Anne-Louis Girodet",
+    "prompt": "art by Anne-Louis Girodet, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

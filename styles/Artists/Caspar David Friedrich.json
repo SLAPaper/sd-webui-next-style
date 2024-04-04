@@ -2,7 +2,7 @@
     "name": "Caspar David Friedrich",
     "description": "art by Caspar David Friedrich",
     "preview": "Caspar David Friedrich.jpg",
-    "prompt": "art by Caspar David Friedrich",
+    "prompt": "art by Caspar David Friedrich, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

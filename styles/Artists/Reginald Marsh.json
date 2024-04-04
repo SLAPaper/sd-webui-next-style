@@ -2,7 +2,7 @@
     "name": "Reginald Marsh",
     "description": "art by Reginald Marsh",
     "preview": "Reginald Marsh.jpg",
-    "prompt": "art by Reginald Marsh",
+    "prompt": "art by Reginald Marsh, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

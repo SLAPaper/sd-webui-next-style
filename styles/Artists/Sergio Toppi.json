@@ -2,7 +2,7 @@
     "name": "Sergio Toppi",
     "description": "art by Sergio Toppi",
     "preview": "Sergio Toppi.jpg",
-    "prompt": "art by Sergio Toppi",
+    "prompt": "art by Sergio Toppi, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

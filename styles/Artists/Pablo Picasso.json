@@ -2,7 +2,7 @@
     "name": "Pablo Picasso",
     "description": "art by Pablo Picasso",
     "preview": "Pablo Picasso.jpg",
-    "prompt": "art by Pablo Picasso",
+    "prompt": "art by Pablo Picasso, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

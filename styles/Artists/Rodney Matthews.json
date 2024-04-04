@@ -2,7 +2,7 @@
     "name": "Rodney Matthews",
     "description": "art by Rodney Matthews",
     "preview": "Rodney Matthews.jpg",
-    "prompt": "art by Rodney Matthews",
+    "prompt": "art by Rodney Matthews, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

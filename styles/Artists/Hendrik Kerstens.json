@@ -2,7 +2,7 @@
     "name": "Hendrik Kerstens",
     "description": "art by Hendrik Kerstens",
     "preview": "Hendrik Kerstens.jpg",
-    "prompt": "art by Hendrik Kerstens",
+    "prompt": "art by Hendrik Kerstens, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

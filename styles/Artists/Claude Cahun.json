@@ -2,7 +2,7 @@
     "name": "Claude Cahun",
     "description": "art by Claude Cahun",
     "preview": "Claude Cahun.jpg",
-    "prompt": "art by Claude Cahun",
+    "prompt": "art by Claude Cahun, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

@@ -2,7 +2,7 @@
     "name": "Yoshitaka Amano",
     "description": "art by Yoshitaka Amano",
     "preview": "Yoshitaka Amano.jpg",
-    "prompt": "art by Yoshitaka Amano",
+    "prompt": "art by Yoshitaka Amano, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

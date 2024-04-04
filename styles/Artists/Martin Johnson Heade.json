@@ -2,7 +2,7 @@
     "name": "Martin Johnson Heade",
     "description": "art by Martin Johnson Heade",
     "preview": "Martin Johnson Heade.jpg",
-    "prompt": "art by Martin Johnson Heade",
+    "prompt": "art by Martin Johnson Heade, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

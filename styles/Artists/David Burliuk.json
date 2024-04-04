@@ -2,7 +2,7 @@
     "name": "David Burliuk",
     "description": "art by David Burliuk",
     "preview": "David Burliuk.jpg",
-    "prompt": "art by David Burliuk",
+    "prompt": "art by David Burliuk, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

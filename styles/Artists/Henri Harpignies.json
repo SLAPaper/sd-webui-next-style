@@ -2,7 +2,7 @@
     "name": "Henri Harpignies",
     "description": "art by Henri Harpignies",
     "preview": "Henri Harpignies.jpg",
-    "prompt": "art by Henri Harpignies",
+    "prompt": "art by Henri Harpignies, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

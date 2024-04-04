@@ -2,7 +2,7 @@
     "name": "Paul Rand",
     "description": "art by Paul Rand",
     "preview": "Paul Rand.jpg",
-    "prompt": "art by Paul Rand",
+    "prompt": "art by Paul Rand, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

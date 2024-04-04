@@ -2,7 +2,7 @@
     "name": "Hieronymus Bosch",
     "description": "art by Hieronymus Bosch",
     "preview": "Hieronymus Bosch.jpg",
-    "prompt": "art by Hieronymus Bosch",
+    "prompt": "art by Hieronymus Bosch, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

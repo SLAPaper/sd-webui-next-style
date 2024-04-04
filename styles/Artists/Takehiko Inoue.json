@@ -2,7 +2,7 @@
     "name": "Takehiko Inoue",
     "description": "art by Takehiko Inoue",
     "preview": "Takehiko Inoue.jpg",
-    "prompt": "art by Takehiko Inoue",
+    "prompt": "art by Takehiko Inoue, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

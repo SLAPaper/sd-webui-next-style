@@ -2,7 +2,7 @@
     "name": "Stephanie Law",
     "description": "art by Stephanie Law",
     "preview": "Stephanie Law.jpg",
-    "prompt": "art by Stephanie Law",
+    "prompt": "art by Stephanie Law, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

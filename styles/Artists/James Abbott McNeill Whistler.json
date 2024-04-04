@@ -2,7 +2,7 @@
     "name": "James Abbott McNeill Whistler",
     "description": "art by James Abbott McNeill Whistler",
     "preview": "James Abbott McNeill Whistler.jpg",
-    "prompt": "art by James Abbott McNeill Whistler",
+    "prompt": "art by James Abbott McNeill Whistler, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

@@ -2,7 +2,7 @@
     "name": "Nell Dorr",
     "description": "art by Nell Dorr",
     "preview": "Nell Dorr.jpg",
-    "prompt": "art by Nell Dorr",
+    "prompt": "art by Nell Dorr, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

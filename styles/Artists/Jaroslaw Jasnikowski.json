@@ -2,7 +2,7 @@
     "name": "Jaroslaw Jasnikowski",
     "description": "art by Jaroslaw Jasnikowski",
     "preview": "Jaroslaw Jasnikowski.jpg",
-    "prompt": "art by Jaroslaw Jasnikowski",
+    "prompt": "art by Jaroslaw Jasnikowski, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

@@ -2,7 +2,7 @@
     "name": "Francisco Goya",
     "description": "art by Francisco Goya",
     "preview": "Francisco Goya.jpg",
-    "prompt": "art by Francisco Goya",
+    "prompt": "art by Francisco Goya, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

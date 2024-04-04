@@ -2,7 +2,7 @@
     "name": "Jules Feiffer",
     "description": "art by Jules Feiffer",
     "preview": "Jules Feiffer.jpg",
-    "prompt": "art by Jules Feiffer",
+    "prompt": "art by Jules Feiffer, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

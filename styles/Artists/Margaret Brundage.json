@@ -2,7 +2,7 @@
     "name": "Margaret Brundage",
     "description": "art by Margaret Brundage",
     "preview": "Margaret Brundage.jpg",
-    "prompt": "art by Margaret Brundage",
+    "prompt": "art by Margaret Brundage, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

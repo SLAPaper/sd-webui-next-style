@@ -2,7 +2,7 @@
     "name": "Marco Mazzoni",
     "description": "art by Marco Mazzoni",
     "preview": "Marco Mazzoni.jpg",
-    "prompt": "art by Marco Mazzoni",
+    "prompt": "art by Marco Mazzoni, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

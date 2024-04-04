@@ -2,7 +2,7 @@
     "name": "Don Bluth",
     "description": "art by Don Bluth",
     "preview": "Don Bluth.jpg",
-    "prompt": "art by Don Bluth",
+    "prompt": "art by Don Bluth, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

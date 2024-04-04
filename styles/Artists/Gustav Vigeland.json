@@ -2,7 +2,7 @@
     "name": "Gustav Vigeland",
     "description": "art by Gustav Vigeland",
     "preview": "Gustav Vigeland.jpg",
-    "prompt": "art by Gustav Vigeland",
+    "prompt": "art by Gustav Vigeland, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

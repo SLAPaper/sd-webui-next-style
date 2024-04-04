@@ -2,7 +2,7 @@
     "name": "David Alfaro Siqueiros",
     "description": "art by David Alfaro Siqueiros",
     "preview": "David Alfaro Siqueiros.jpg",
-    "prompt": "art by David Alfaro Siqueiros",
+    "prompt": "art by David Alfaro Siqueiros, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

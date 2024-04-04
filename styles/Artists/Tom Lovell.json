@@ -2,7 +2,7 @@
     "name": "Tom Lovell",
     "description": "art by Tom Lovell",
     "preview": "Tom Lovell.jpg",
-    "prompt": "art by Tom Lovell",
+    "prompt": "art by Tom Lovell, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

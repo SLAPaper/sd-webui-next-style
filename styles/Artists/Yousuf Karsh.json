@@ -2,7 +2,7 @@
     "name": "Yousuf Karsh",
     "description": "art by Yousuf Karsh",
     "preview": "Yousuf Karsh.jpg",
-    "prompt": "art by Yousuf Karsh",
+    "prompt": "art by Yousuf Karsh, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

@@ -2,7 +2,7 @@
     "name": "Ryohei Hase",
     "description": "art by Ryohei Hase",
     "preview": "Ryohei Hase.jpg",
-    "prompt": "art by Ryohei Hase",
+    "prompt": "art by Ryohei Hase, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

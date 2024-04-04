@@ -2,7 +2,7 @@
     "name": "Miles Aldridge",
     "description": "art by Miles Aldridge",
     "preview": "Miles Aldridge.jpg",
-    "prompt": "art by Miles Aldridge",
+    "prompt": "art by Miles Aldridge, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

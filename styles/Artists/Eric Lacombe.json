@@ -2,7 +2,7 @@
     "name": "Eric Lacombe",
     "description": "art by Eric Lacombe",
     "preview": "Eric Lacombe.jpg",
-    "prompt": "art by Eric Lacombe",
+    "prompt": "art by Eric Lacombe, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

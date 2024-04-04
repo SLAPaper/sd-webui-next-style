@@ -2,7 +2,7 @@
     "name": "Patrick Woodroffe",
     "description": "art by Patrick Woodroffe",
     "preview": "Patrick Woodroffe.jpg",
-    "prompt": "art by Patrick Woodroffe",
+    "prompt": "art by Patrick Woodroffe, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

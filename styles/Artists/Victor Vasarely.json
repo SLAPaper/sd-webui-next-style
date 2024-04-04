@@ -2,7 +2,7 @@
     "name": "Victor Vasarely",
     "description": "art by Victor Vasarely",
     "preview": "Victor Vasarely.jpg",
-    "prompt": "art by Victor Vasarely",
+    "prompt": "art by Victor Vasarely, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

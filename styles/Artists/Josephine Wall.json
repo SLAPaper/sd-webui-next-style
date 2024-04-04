@@ -2,7 +2,7 @@
     "name": "Josephine Wall",
     "description": "art by Josephine Wall",
     "preview": "Josephine Wall.jpg",
-    "prompt": "art by Josephine Wall",
+    "prompt": "art by Josephine Wall, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

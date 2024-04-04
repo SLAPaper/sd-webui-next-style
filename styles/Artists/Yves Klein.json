@@ -2,7 +2,7 @@
     "name": "Yves Klein",
     "description": "art by Yves Klein",
     "preview": "Yves Klein.jpg",
-    "prompt": "art by Yves Klein",
+    "prompt": "art by Yves Klein, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

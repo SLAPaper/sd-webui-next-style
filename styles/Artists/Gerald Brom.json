@@ -2,7 +2,7 @@
     "name": "Gerald Brom",
     "description": "art by Gerald Brom",
     "preview": "Gerald Brom.jpg",
-    "prompt": "art by Gerald Brom",
+    "prompt": "art by Gerald Brom, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

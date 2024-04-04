@@ -2,7 +2,7 @@
     "name": "Canaletto",
     "description": "art by Canaletto",
     "preview": "Canaletto.jpg",
-    "prompt": "art by Canaletto",
+    "prompt": "art by Canaletto, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

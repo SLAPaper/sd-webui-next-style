@@ -2,7 +2,7 @@
     "name": "Hundertwasser",
     "description": "art by Hundertwasser",
     "preview": "Hundertwasser.jpg",
-    "prompt": "art by Hundertwasser",
+    "prompt": "art by Hundertwasser, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

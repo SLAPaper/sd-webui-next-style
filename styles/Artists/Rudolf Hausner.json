@@ -2,7 +2,7 @@
     "name": "Rudolf Hausner",
     "description": "art by Rudolf Hausner",
     "preview": "Rudolf Hausner.jpg",
-    "prompt": "art by Rudolf Hausner",
+    "prompt": "art by Rudolf Hausner, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

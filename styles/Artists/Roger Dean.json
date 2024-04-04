@@ -2,7 +2,7 @@
     "name": "Roger Dean",
     "description": "art by Roger Dean",
     "preview": "Roger Dean.jpg",
-    "prompt": "art by Roger Dean",
+    "prompt": "art by Roger Dean, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

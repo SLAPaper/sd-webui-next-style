@@ -2,7 +2,7 @@
     "name": "Claude Lorrain",
     "description": "art by Claude Lorrain",
     "preview": "Claude Lorrain.jpg",
-    "prompt": "art by Claude Lorrain",
+    "prompt": "art by Claude Lorrain, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

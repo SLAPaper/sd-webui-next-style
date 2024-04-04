@@ -2,7 +2,7 @@
     "name": "Ernst Haeckel",
     "description": "art by Ernst Haeckel",
     "preview": "Ernst Haeckel.jpg",
-    "prompt": "art by Ernst Haeckel",
+    "prompt": "art by Ernst Haeckel, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

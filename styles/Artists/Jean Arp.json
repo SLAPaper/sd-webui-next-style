@@ -2,7 +2,7 @@
     "name": "Jean Arp",
     "description": "art by Jean Arp",
     "preview": "Jean Arp.jpg",
-    "prompt": "art by Jean Arp",
+    "prompt": "art by Jean Arp, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

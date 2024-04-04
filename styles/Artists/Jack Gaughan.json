@@ -2,7 +2,7 @@
     "name": "Jack Gaughan",
     "description": "art by Jack Gaughan",
     "preview": "Jack Gaughan.jpg",
-    "prompt": "art by Jack Gaughan",
+    "prompt": "art by Jack Gaughan, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

@@ -2,7 +2,7 @@
     "name": "Terry Oakes",
     "description": "art by Terry Oakes",
     "preview": "Terry Oakes.jpg",
-    "prompt": "art by Terry Oakes",
+    "prompt": "art by Terry Oakes, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

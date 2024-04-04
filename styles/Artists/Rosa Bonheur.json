@@ -2,7 +2,7 @@
     "name": "Rosa Bonheur",
     "description": "art by Rosa Bonheur",
     "preview": "Rosa Bonheur.jpg",
-    "prompt": "art by Rosa Bonheur",
+    "prompt": "art by Rosa Bonheur, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

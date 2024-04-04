@@ -2,7 +2,7 @@
     "name": "Raphaelite",
     "description": "art by Raphaelite",
     "preview": "Raphaelite.jpg",
-    "prompt": "art by Raphaelite",
+    "prompt": "art by Raphaelite, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

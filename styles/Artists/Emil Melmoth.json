@@ -2,7 +2,7 @@
     "name": "Emil Melmoth",
     "description": "art by Emil Melmoth",
     "preview": "Emil Melmoth.jpg",
-    "prompt": "art by Emil Melmoth",
+    "prompt": "art by Emil Melmoth, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

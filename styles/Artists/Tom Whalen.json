@@ -2,7 +2,7 @@
     "name": "Tom Whalen",
     "description": "art by Tom Whalen",
     "preview": "Tom Whalen.jpg",
-    "prompt": "art by Tom Whalen",
+    "prompt": "art by Tom Whalen, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

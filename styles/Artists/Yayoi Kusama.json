@@ -2,7 +2,7 @@
     "name": "Yayoi Kusama",
     "description": "art by Yayoi Kusama",
     "preview": "Yayoi Kusama.jpg",
-    "prompt": "art by Yayoi Kusama",
+    "prompt": "art by Yayoi Kusama, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

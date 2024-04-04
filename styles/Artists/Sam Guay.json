@@ -2,7 +2,7 @@
     "name": "Sam Guay",
     "description": "art by Sam Guay",
     "preview": "Sam Guay.jpg",
-    "prompt": "art by Sam Guay",
+    "prompt": "art by Sam Guay, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

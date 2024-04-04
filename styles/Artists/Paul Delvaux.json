@@ -2,7 +2,7 @@
     "name": "Paul Delvaux",
     "description": "art by Paul Delvaux",
     "preview": "Paul Delvaux.jpg",
-    "prompt": "art by Paul Delvaux",
+    "prompt": "art by Paul Delvaux, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

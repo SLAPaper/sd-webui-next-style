@@ -2,7 +2,7 @@
     "name": "Katsushika Hokusai",
     "description": "art by Katsushika Hokusai",
     "preview": "Katsushika Hokusai.jpg",
-    "prompt": "art by Katsushika Hokusai",
+    "prompt": "art by Katsushika Hokusai, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

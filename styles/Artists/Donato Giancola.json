@@ -2,7 +2,7 @@
     "name": "Donato Giancola",
     "description": "art by Donato Giancola",
     "preview": "Donato Giancola.jpg",
-    "prompt": "art by Donato Giancola",
+    "prompt": "art by Donato Giancola, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

@@ -2,7 +2,7 @@
     "name": "Jules Pascin",
     "description": "art by Jules Pascin",
     "preview": "Jules Pascin.jpg",
-    "prompt": "art by Jules Pascin",
+    "prompt": "art by Jules Pascin, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

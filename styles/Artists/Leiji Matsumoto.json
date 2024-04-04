@@ -2,7 +2,7 @@
     "name": "Leiji Matsumoto",
     "description": "art by Leiji Matsumoto",
     "preview": "Leiji Matsumoto.jpg",
-    "prompt": "art by Leiji Matsumoto",
+    "prompt": "art by Leiji Matsumoto, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

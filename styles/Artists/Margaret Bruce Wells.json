@@ -2,7 +2,7 @@
     "name": "Margaret Bruce Wells",
     "description": "art by Margaret Bruce Wells",
     "preview": "Margaret Bruce Wells.jpg",
-    "prompt": "art by Margaret Bruce Wells",
+    "prompt": "art by Margaret Bruce Wells, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

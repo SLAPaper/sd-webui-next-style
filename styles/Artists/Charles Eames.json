@@ -2,7 +2,7 @@
     "name": "Charles Eames",
     "description": "art by Charles Eames",
     "preview": "Charles Eames.jpg",
-    "prompt": "art by Charles Eames",
+    "prompt": "art by Charles Eames, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

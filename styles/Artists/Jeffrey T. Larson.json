@@ -2,7 +2,7 @@
     "name": "Jeffrey T. Larson",
     "description": "art by Jeffrey T. Larson",
     "preview": "Jeffrey T. Larson.jpg",
-    "prompt": "art by Jeffrey T. Larson",
+    "prompt": "art by Jeffrey T. Larson, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

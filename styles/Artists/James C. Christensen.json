@@ -2,7 +2,7 @@
     "name": "James C. Christensen",
     "description": "art by James C. Christensen",
     "preview": "James C. Christensen.jpg",
-    "prompt": "art by James C. Christensen",
+    "prompt": "art by James C. Christensen, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

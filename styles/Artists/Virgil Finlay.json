@@ -2,7 +2,7 @@
     "name": "Virgil Finlay",
     "description": "art by Virgil Finlay",
     "preview": "Virgil Finlay.jpg",
-    "prompt": "art by Virgil Finlay",
+    "prompt": "art by Virgil Finlay, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

@@ -2,7 +2,7 @@
     "name": "Jules Bastien-Lepage",
     "description": "art by Jules Bastien-Lepage",
     "preview": "Jules Bastien-Lepage.jpg",
-    "prompt": "art by Jules Bastien-Lepage",
+    "prompt": "art by Jules Bastien-Lepage, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

@@ -2,7 +2,7 @@
     "name": "Satoshi Kon",
     "description": "art by Satoshi Kon",
     "preview": "Satoshi Kon.jpg",
-    "prompt": "art by Satoshi Kon",
+    "prompt": "art by Satoshi Kon, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

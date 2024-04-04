@@ -2,6 +2,6 @@
     "name": "Akihito Tsukushi",
     "description": "art by Akihito Tsukushi",
     "preview": "Akihito Tsukushi.jpg",
-    "prompt": "art by Akihito Tsukushi",
+    "prompt": "art by Akihito Tsukushi, a painting depicting {prompt}",
     "negative": ""
 }

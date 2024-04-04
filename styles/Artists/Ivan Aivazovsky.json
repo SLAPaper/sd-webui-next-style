@@ -2,7 +2,7 @@
     "name": "Ivan Aivazovsky",
     "description": "art by Ivan Aivazovsky",
     "preview": "Ivan Aivazovsky.jpg",
-    "prompt": "art by Ivan Aivazovsky",
+    "prompt": "art by Ivan Aivazovsky, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

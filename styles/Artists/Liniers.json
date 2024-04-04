@@ -2,7 +2,7 @@
     "name": "Liniers",
     "description": "art by Liniers",
     "preview": "Liniers.jpg",
-    "prompt": "art by Liniers",
+    "prompt": "art by Liniers, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

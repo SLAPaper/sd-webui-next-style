@@ -2,7 +2,7 @@
     "name": "Pieter Claesz",
     "description": "art by Pieter Claesz",
     "preview": "Pieter Claesz.jpg",
-    "prompt": "art by Pieter Claesz",
+    "prompt": "art by Pieter Claesz, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

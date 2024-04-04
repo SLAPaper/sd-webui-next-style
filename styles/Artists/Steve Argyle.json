@@ -2,7 +2,7 @@
     "name": "Steve Argyle",
     "description": "art by Steve Argyle",
     "preview": "Steve Argyle.jpg",
-    "prompt": "art by Steve Argyle",
+    "prompt": "art by Steve Argyle, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

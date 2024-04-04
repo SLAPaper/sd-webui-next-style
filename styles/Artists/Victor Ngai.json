@@ -2,7 +2,7 @@
     "name": "Victor Ngai",
     "description": "art by Victor Ngai",
     "preview": "Victor Ngai.jpg",
-    "prompt": "art by Victor Ngai",
+    "prompt": "art by Victor Ngai, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

@@ -2,7 +2,7 @@
     "name": "David Hockney",
     "description": "art by David Hockney",
     "preview": "David Hockney.jpg",
-    "prompt": "art by David Hockney",
+    "prompt": "art by David Hockney, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

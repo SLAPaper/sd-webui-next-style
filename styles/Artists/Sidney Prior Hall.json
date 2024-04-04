@@ -2,7 +2,7 @@
     "name": "Sidney Prior Hall",
     "description": "art by Sidney Prior Hall",
     "preview": "Sidney Prior Hall.jpg",
-    "prompt": "art by Sidney Prior Hall",
+    "prompt": "art by Sidney Prior Hall, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

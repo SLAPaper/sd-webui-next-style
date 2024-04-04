@@ -2,7 +2,7 @@
     "name": "Sebasti\u00e3o Salgado",
     "description": "art by Sebasti\u00e3o Salgado",
     "preview": "Sebasti\u00e3o Salgado.jpg",
-    "prompt": "art by Sebasti\u00e3o Salgado",
+    "prompt": "art by Sebasti\u00e3o Salgado, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

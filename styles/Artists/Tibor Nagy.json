@@ -2,7 +2,7 @@
     "name": "Tibor Nagy",
     "description": "art by Tibor Nagy",
     "preview": "Tibor Nagy.jpg",
-    "prompt": "art by Tibor Nagy",
+    "prompt": "art by Tibor Nagy, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

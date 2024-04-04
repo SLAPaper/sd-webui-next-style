@@ -2,7 +2,7 @@
     "name": "Joaquin Sorolla",
     "description": "art by Joaquin Sorolla",
     "preview": "Joaquin Sorolla.jpg",
-    "prompt": "art by Joaquin Sorolla",
+    "prompt": "art by Joaquin Sorolla, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

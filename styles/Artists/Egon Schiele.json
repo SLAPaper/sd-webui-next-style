@@ -2,7 +2,7 @@
     "name": "Egon Schiele",
     "description": "art by Egon Schiele",
     "preview": "Egon Schiele.jpg",
-    "prompt": "art by Egon Schiele",
+    "prompt": "art by Egon Schiele, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

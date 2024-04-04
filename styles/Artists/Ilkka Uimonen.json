@@ -2,7 +2,7 @@
     "name": "Ilkka Uimonen",
     "description": "art by Ilkka Uimonen",
     "preview": "Ilkka Uimonen.jpg",
-    "prompt": "art by Ilkka Uimonen",
+    "prompt": "art by Ilkka Uimonen, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

@@ -2,7 +2,7 @@
     "name": "Lee Krasner",
     "description": "art by Lee Krasner",
     "preview": "Lee Krasner.jpg",
-    "prompt": "art by Lee Krasner",
+    "prompt": "art by Lee Krasner, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

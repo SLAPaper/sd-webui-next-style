@@ -2,7 +2,6 @@
     "name": "Alex Maleev",
     "description": "art by Alex Maleev",
     "preview": "Alex Maleev.jpg",
-    "prompt": "art by Alex Maleev",
-    "negative": "",
-    "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
+    "prompt": "art by Alex Maleev, a painting depicting {prompt}",
+    "negative": ""
 }

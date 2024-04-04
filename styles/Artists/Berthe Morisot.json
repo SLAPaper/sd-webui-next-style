@@ -2,7 +2,7 @@
     "name": "Berthe Morisot",
     "description": "art by Berthe Morisot",
     "preview": "Berthe Morisot.jpg",
-    "prompt": "art by Berthe Morisot",
+    "prompt": "art by Berthe Morisot, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

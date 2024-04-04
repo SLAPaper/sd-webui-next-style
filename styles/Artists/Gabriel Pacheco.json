@@ -2,7 +2,7 @@
     "name": "Gabriel Pacheco",
     "description": "art by Gabriel Pacheco",
     "preview": "Gabriel Pacheco.jpg",
-    "prompt": "art by Gabriel Pacheco",
+    "prompt": "art by Gabriel Pacheco, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

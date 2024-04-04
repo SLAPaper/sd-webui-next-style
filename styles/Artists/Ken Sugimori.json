@@ -2,7 +2,7 @@
     "name": "Ken Sugimori",
     "description": "art by Ken Sugimori",
     "preview": "Ken Sugimori.jpg",
-    "prompt": "art by Ken Sugimori",
+    "prompt": "art by Ken Sugimori, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

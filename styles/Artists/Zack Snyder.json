@@ -2,7 +2,7 @@
     "name": "Zack Snyder",
     "description": "art by Zack Snyder",
     "preview": "Zack Snyder.jpg",
-    "prompt": "art by Zack Snyder",
+    "prompt": "art by Zack Snyder, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

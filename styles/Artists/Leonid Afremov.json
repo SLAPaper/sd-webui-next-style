@@ -2,7 +2,7 @@
     "name": "Leonid Afremov",
     "description": "art by Leonid Afremov",
     "preview": "Leonid Afremov.jpg",
-    "prompt": "art by Leonid Afremov",
+    "prompt": "art by Leonid Afremov, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

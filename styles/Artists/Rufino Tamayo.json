@@ -2,7 +2,7 @@
     "name": "Rufino Tamayo",
     "description": "art by Rufino Tamayo",
     "preview": "Rufino Tamayo.jpg",
-    "prompt": "art by Rufino Tamayo",
+    "prompt": "art by Rufino Tamayo, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

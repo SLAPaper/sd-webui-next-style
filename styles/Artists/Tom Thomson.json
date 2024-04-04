@@ -2,7 +2,7 @@
     "name": "Tom Thomson",
     "description": "art by Tom Thomson",
     "preview": "Tom Thomson.jpg",
-    "prompt": "art by Tom Thomson",
+    "prompt": "art by Tom Thomson, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

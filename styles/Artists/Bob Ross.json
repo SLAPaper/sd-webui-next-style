@@ -2,7 +2,7 @@
     "name": "Bob Ross",
     "description": "art by Bob Ross",
     "preview": "Bob Ross.jpg",
-    "prompt": "art by Bob Ross",
+    "prompt": "art by Bob Ross, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

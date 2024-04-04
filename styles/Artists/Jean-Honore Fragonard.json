@@ -2,7 +2,7 @@
     "name": "Jean-Honore Fragonard",
     "description": "art by Jean-Honore Fragonard",
     "preview": "Jean-Honore Fragonard.jpg",
-    "prompt": "art by Jean-Honore Fragonard",
+    "prompt": "art by Jean-Honore Fragonard, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

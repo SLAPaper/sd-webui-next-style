@@ -2,7 +2,7 @@
     "name": "Jim Burns",
     "description": "art by Jim Burns",
     "preview": "Jim Burns.jpg",
-    "prompt": "art by Jim Burns",
+    "prompt": "art by Jim Burns, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

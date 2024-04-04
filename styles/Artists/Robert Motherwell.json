@@ -2,7 +2,7 @@
     "name": "Robert Motherwell",
     "description": "art by Robert Motherwell",
     "preview": "Robert Motherwell.jpg",
-    "prompt": "art by Robert Motherwell",
+    "prompt": "art by Robert Motherwell, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

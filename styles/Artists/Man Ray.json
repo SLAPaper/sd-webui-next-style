@@ -2,7 +2,7 @@
     "name": "Man Ray",
     "description": "art by Man Ray",
     "preview": "Man Ray.jpg",
-    "prompt": "art by Man Ray",
+    "prompt": "art by Man Ray, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

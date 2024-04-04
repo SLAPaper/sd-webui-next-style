@@ -2,7 +2,7 @@
     "name": "Simon St\u00e5lenhag",
     "description": "art by Simon St\u00e5lenhag",
     "preview": "Simon St\u00e5lenhag.jpg",
-    "prompt": "art by Simon St\u00e5lenhag",
+    "prompt": "art by Simon St\u00e5lenhag, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

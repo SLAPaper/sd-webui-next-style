@@ -2,7 +2,7 @@
     "name": "Bob Byerley",
     "description": "art by Bob Byerley",
     "preview": "Bob Byerley.jpg",
-    "prompt": "art by Bob Byerley",
+    "prompt": "art by Bob Byerley, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

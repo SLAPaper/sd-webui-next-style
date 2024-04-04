@@ -2,7 +2,7 @@
     "name": "Edwin Austen Abbey",
     "description": "art by Edwin Austen Abbey",
     "preview": "Edwin Austen Abbey.jpg",
-    "prompt": "art by Edwin Austen Abbey",
+    "prompt": "art by Edwin Austen Abbey, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

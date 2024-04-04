@@ -2,7 +2,7 @@
     "name": "Jacques-Laurent Agasse",
     "description": "art by Jacques-Laurent Agasse",
     "preview": "Jacques-Laurent Agasse.jpg",
-    "prompt": "art by Jacques-Laurent Agasse",
+    "prompt": "art by Jacques-Laurent Agasse, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

@@ -2,7 +2,7 @@
     "name": "Romare Bearden",
     "description": "art by Romare Bearden",
     "preview": "Romare Bearden.jpg",
-    "prompt": "art by Romare Bearden",
+    "prompt": "art by Romare Bearden, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

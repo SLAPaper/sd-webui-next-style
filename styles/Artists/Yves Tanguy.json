@@ -2,7 +2,7 @@
     "name": "Yves Tanguy",
     "description": "art by Yves Tanguy",
     "preview": "Yves Tanguy.jpg",
-    "prompt": "art by Yves Tanguy",
+    "prompt": "art by Yves Tanguy, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

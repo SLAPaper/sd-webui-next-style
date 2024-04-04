@@ -2,7 +2,7 @@
     "name": "Margaret Graeme Niven",
     "description": "art by Margaret Graeme Niven",
     "preview": "Margaret Graeme Niven.jpg",
-    "prompt": "art by Margaret Graeme Niven",
+    "prompt": "art by Margaret Graeme Niven, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

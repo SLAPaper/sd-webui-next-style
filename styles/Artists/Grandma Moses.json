@@ -2,7 +2,7 @@
     "name": "Grandma Moses",
     "description": "art by Grandma Moses",
     "preview": "Grandma Moses.jpg",
-    "prompt": "art by Grandma Moses",
+    "prompt": "art by Grandma Moses, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

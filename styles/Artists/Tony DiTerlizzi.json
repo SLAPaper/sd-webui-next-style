@@ -2,7 +2,7 @@
     "name": "Tony DiTerlizzi",
     "description": "art by Tony DiTerlizzi",
     "preview": "Tony DiTerlizzi.jpg",
-    "prompt": "art by Tony DiTerlizzi",
+    "prompt": "art by Tony DiTerlizzi, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

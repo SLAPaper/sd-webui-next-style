@@ -2,7 +2,7 @@
     "name": "John Bauer",
     "description": "art by John Bauer",
     "preview": "John Bauer.jpg",
-    "prompt": "art by John Bauer",
+    "prompt": "art by John Bauer, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

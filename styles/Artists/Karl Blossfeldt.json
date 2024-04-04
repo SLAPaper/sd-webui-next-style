@@ -2,7 +2,7 @@
     "name": "Karl Blossfeldt",
     "description": "art by Karl Blossfeldt",
     "preview": "Karl Blossfeldt.jpg",
-    "prompt": "art by Karl Blossfeldt",
+    "prompt": "art by Karl Blossfeldt, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

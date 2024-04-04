@@ -2,7 +2,7 @@
     "name": "Dan Flavin",
     "description": "art by Dan Flavin",
     "preview": "Dan Flavin.jpg",
-    "prompt": "art by Dan Flavin",
+    "prompt": "art by Dan Flavin, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

@@ -2,7 +2,7 @@
     "name": "Theodor Seuss Geisel (dr. seuss)",
     "description": "art by Theodor Seuss Geisel",
     "preview": "Theodor Seuss Geisel.jpg",
-    "prompt": "art by Theodor Seuss Geisel",
+    "prompt": "art by Theodor Seuss Geisel, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

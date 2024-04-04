@@ -2,7 +2,7 @@
     "name": "Mikhail Vrubel",
     "description": "art by Mikhail Vrubel",
     "preview": "Mikhail Vrubel.jpg",
-    "prompt": "art by Mikhail Vrubel",
+    "prompt": "art by Mikhail Vrubel, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

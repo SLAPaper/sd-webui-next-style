@@ -2,7 +2,7 @@
     "name": "William S Burroughs",
     "description": "art by William S Burroughs",
     "preview": "William S Burroughs.jpg",
-    "prompt": "art by William S Burroughs",
+    "prompt": "art by William S Burroughs, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

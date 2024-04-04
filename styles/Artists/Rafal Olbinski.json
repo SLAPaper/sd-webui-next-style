@@ -2,7 +2,7 @@
     "name": "Rafal Olbinski",
     "description": "art by Rafal Olbinski",
     "preview": "Rafal Olbinski.jpg",
-    "prompt": "art by Rafal Olbinski",
+    "prompt": "art by Rafal Olbinski, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

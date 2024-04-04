@@ -2,7 +2,7 @@
     "name": "Mark Brooks",
     "description": "art by Mark Brooks",
     "preview": "Mark Brooks.jpg",
-    "prompt": "art by Mark Brooks",
+    "prompt": "art by Mark Brooks, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

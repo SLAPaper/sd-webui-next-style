@@ -2,7 +2,7 @@
     "name": "Greg Rutkowski",
     "description": "art by Greg Rutkowski",
     "preview": "Greg Rutkowski.jpg",
-    "prompt": "art by Greg Rutkowski",
+    "prompt": "art by Greg Rutkowski, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

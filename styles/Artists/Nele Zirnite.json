@@ -2,7 +2,7 @@
     "name": "Nele Zirnite",
     "description": "art by Nele Zirnite",
     "preview": "Nele Zirnite.jpg",
-    "prompt": "art by Nele Zirnite",
+    "prompt": "art by Nele Zirnite, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

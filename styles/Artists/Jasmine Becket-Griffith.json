@@ -2,7 +2,7 @@
     "name": "Jasmine Becket-Griffith",
     "description": "art by Jasmine Becket-Griffith",
     "preview": "Jasmine Becket-Griffith.jpg",
-    "prompt": "art by Jasmine Becket-Griffith",
+    "prompt": "art by Jasmine Becket-Griffith, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

@@ -2,7 +2,7 @@
     "name": "Mary Blair",
     "description": "art by Mary Blair",
     "preview": "Mary Blair.jpg",
-    "prompt": "art by Mary Blair",
+    "prompt": "art by Mary Blair, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

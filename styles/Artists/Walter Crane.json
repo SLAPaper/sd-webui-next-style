@@ -2,7 +2,6 @@
     "name": "Walter Crane",
     "description": "art by Walter Crane",
     "preview": "Walter Crane.jpg",
-    "prompt": "art by Walter Crane",
-    "negative": "",
-    "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
+    "prompt": "art by Walter Crane, a painting depicting {prompt}",
+    "negative": ""
 }

@@ -2,7 +2,7 @@
     "name": "Tarsila do Amaral",
     "description": "art by Tarsila do Amaral",
     "preview": "Tarsila do Amaral.jpg",
-    "prompt": "art by Tarsila do Amaral",
+    "prompt": "art by Tarsila do Amaral, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

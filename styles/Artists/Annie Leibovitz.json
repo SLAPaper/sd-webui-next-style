@@ -2,7 +2,7 @@
     "name": "Annie Leibovitz",
     "description": "art by Annie Leibovitz",
     "preview": "Annie Leibovitz.jpg",
-    "prompt": "art by Annie Leibovitz",
+    "prompt": "art by Annie Leibovitz, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

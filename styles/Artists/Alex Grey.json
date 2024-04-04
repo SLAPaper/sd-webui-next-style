@@ -2,6 +2,6 @@
     "name": "Alex Grey",
     "description": "art by Alex Grey",
     "preview": "Alex Grey.jpg",
-    "prompt": "art by Alex Grey",
+    "prompt": "art by Alex Grey, a painting depicting {prompt}",
     "negative": ""
 }

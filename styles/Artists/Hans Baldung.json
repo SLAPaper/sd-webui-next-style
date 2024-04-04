@@ -2,7 +2,7 @@
     "name": "Hans Baldung",
     "description": "art by Hans Baldung",
     "preview": "Hans Baldung.jpg",
-    "prompt": "art by Hans Baldung",
+    "prompt": "art by Hans Baldung, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

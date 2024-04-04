@@ -2,7 +2,7 @@
     "name": "Luis Royo",
     "description": "art by Luis Royo",
     "preview": "Luis Royo.jpg",
-    "prompt": "art by Luis Royo",
+    "prompt": "art by Luis Royo, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

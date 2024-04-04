@@ -2,7 +2,7 @@
     "name": "Frank Miller",
     "description": "art by Frank Miller",
     "preview": "Frank Miller.jpg",
-    "prompt": "art by Frank Miller",
+    "prompt": "art by Frank Miller, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

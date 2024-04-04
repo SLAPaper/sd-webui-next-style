@@ -2,7 +2,7 @@
     "name": "Isamu Noguchi",
     "description": "art by Isamu Noguchi",
     "preview": "Isamu Noguchi.jpg",
-    "prompt": "art by Isamu Noguchi",
+    "prompt": "art by Isamu Noguchi, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

@@ -2,7 +2,7 @@
     "name": "Lyubov Popova",
     "description": "art by Lyubov Popova",
     "preview": "Lyubov Popova.jpg",
-    "prompt": "art by Lyubov Popova",
+    "prompt": "art by Lyubov Popova, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

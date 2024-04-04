@@ -2,7 +2,7 @@
     "name": "Mario Testino",
     "description": "art by Mario Testino",
     "preview": "Mario Testino.jpg",
-    "prompt": "art by Mario Testino",
+    "prompt": "art by Mario Testino, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

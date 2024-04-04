@@ -2,7 +2,7 @@
     "name": "Milton Avery",
     "description": "art by Milton Avery",
     "preview": "Milton Avery.jpg",
-    "prompt": "art by Milton Avery",
+    "prompt": "art by Milton Avery, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

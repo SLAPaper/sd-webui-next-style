@@ -2,7 +2,7 @@
     "name": "Kelly McKernan",
     "description": "art by Kelly McKernan",
     "preview": "Kelly McKernan.jpg",
-    "prompt": "art by Kelly McKernan",
+    "prompt": "art by Kelly McKernan, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

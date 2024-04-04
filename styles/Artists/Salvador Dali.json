@@ -2,7 +2,7 @@
     "name": "Salvador Dali",
     "description": "art by Salvador Dali",
     "preview": "Salvador Dali.jpg",
-    "prompt": "art by Salvador Dali",
+    "prompt": "art by Salvador Dali, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

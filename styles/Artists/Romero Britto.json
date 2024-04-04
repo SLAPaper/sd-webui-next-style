@@ -2,7 +2,7 @@
     "name": "Romero Britto",
     "description": "art by Romero Britto",
     "preview": "Romero Britto.jpg",
-    "prompt": "art by Romero Britto",
+    "prompt": "art by Romero Britto, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

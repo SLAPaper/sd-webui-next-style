@@ -2,7 +2,7 @@
     "name": "Barclay Shaw",
     "description": "art by Barclay Shaw",
     "preview": "Barclay Shaw.jpg",
-    "prompt": "art by Barclay Shaw",
+    "prompt": "art by Barclay Shaw, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

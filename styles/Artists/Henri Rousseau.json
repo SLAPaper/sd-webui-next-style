@@ -2,7 +2,7 @@
     "name": "Henri Rousseau",
     "description": "art by Henri Rousseau",
     "preview": "Henri Rousseau.jpg",
-    "prompt": "art by Henri Rousseau",
+    "prompt": "art by Henri Rousseau, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

@@ -2,7 +2,7 @@
     "name": "Alexandre Cabanel",
     "description": "art by Alexandre Cabanel",
     "preview": "Alexandre Cabanel.jpg",
-    "prompt": "art by Alexandre Cabanel",
+    "prompt": "art by Alexandre Cabanel, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

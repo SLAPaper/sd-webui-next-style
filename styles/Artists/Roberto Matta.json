@@ -2,7 +2,7 @@
     "name": "Roberto Matta",
     "description": "art by Roberto Matta",
     "preview": "Roberto Matta.jpg",
-    "prompt": "art by Roberto Matta",
+    "prompt": "art by Roberto Matta, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

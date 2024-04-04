@@ -2,7 +2,7 @@
     "name": "Winslow Homer",
     "description": "art by Winslow Homer",
     "preview": "Winslow Homer.jpg",
-    "prompt": "art by Winslow Homer",
+    "prompt": "art by Winslow Homer, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

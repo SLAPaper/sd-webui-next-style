@@ -2,7 +2,7 @@
     "name": "Friedensreich Regentag Dunkelbunt Hundertwasser",
     "description": "art by Friedensreich Regentag Dunkelbunt Hundertwasser",
     "preview": "Friedensreich Regentag Dunkelbunt Hundertwasser.jpg",
-    "prompt": "art by Friedensreich Regentag Dunkelbunt Hundertwasser",
+    "prompt": "art by Friedensreich Regentag Dunkelbunt Hundertwasser, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

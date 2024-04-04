@@ -2,7 +2,7 @@
     "name": "Kathe Kollwitz",
     "description": "art by Kathe Kollwitz",
     "preview": "Kathe Kollwitz.jpg",
-    "prompt": "art by Kathe Kollwitz",
+    "prompt": "art by Kathe Kollwitz, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

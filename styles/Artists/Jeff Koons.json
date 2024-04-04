@@ -2,7 +2,7 @@
     "name": "Jeff Koons",
     "description": "art by Jeff Koons",
     "preview": "Jeff Koons.jpg",
-    "prompt": "art by Jeff Koons",
+    "prompt": "art by Jeff Koons, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

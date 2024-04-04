@@ -2,7 +2,7 @@
     "name": "Alice Neel",
     "description": "art by Alice Neel",
     "preview": "Alice Neel.jpg",
-    "prompt": "art by Alice Neel",
+    "prompt": "art by Alice Neel, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

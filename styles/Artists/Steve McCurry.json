@@ -2,7 +2,7 @@
     "name": "Steve McCurry",
     "description": "art by Steve McCurry",
     "preview": "Steve McCurry.jpg",
-    "prompt": "art by Steve McCurry",
+    "prompt": "art by Steve McCurry, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

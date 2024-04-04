@@ -2,7 +2,7 @@
     "name": "James Turrell",
     "description": "art by James Turrell",
     "preview": "James Turrell.jpg",
-    "prompt": "art by James Turrell",
+    "prompt": "art by James Turrell, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

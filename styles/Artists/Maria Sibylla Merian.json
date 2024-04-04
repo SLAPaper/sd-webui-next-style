@@ -2,7 +2,7 @@
     "name": "Maria Sibylla Merian",
     "description": "art by Maria Sibylla Merian",
     "preview": "Maria Sibylla Merian.jpg",
-    "prompt": "art by Maria Sibylla Merian",
+    "prompt": "art by Maria Sibylla Merian, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

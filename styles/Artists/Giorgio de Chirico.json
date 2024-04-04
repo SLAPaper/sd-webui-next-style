@@ -2,7 +2,7 @@
     "name": "Giorgio de Chirico",
     "description": "art by Giorgio de Chirico",
     "preview": "Giorgio de Chirico.jpg",
-    "prompt": "art by Giorgio de Chirico",
+    "prompt": "art by Giorgio de Chirico, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

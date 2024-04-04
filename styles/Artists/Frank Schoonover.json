@@ -2,7 +2,7 @@
     "name": "Frank Schoonover",
     "description": "art by Frank Schoonover",
     "preview": "Frank Schoonover.jpg",
-    "prompt": "art by Frank Schoonover",
+    "prompt": "art by Frank Schoonover, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

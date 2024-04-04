@@ -2,7 +2,7 @@
     "name": "Tom Bagshaw",
     "description": "art by Tom Bagshaw",
     "preview": "Tom Bagshaw.jpg",
-    "prompt": "art by Tom Bagshaw",
+    "prompt": "art by Tom Bagshaw, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

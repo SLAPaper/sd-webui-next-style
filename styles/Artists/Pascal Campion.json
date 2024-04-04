@@ -2,7 +2,7 @@
     "name": "Pascal Campion",
     "description": "art by Pascal Campion",
     "preview": "Pascal Campion.jpg",
-    "prompt": "art by Pascal Campion",
+    "prompt": "art by Pascal Campion, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

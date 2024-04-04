@@ -2,7 +2,7 @@
     "name": "Matthias Grunewald",
     "description": "art by Matthias Grunewald",
     "preview": "Matthias Grunewald.jpg",
-    "prompt": "art by Matthias Grunewald",
+    "prompt": "art by Matthias Grunewald, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

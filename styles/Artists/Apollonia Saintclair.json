@@ -2,7 +2,7 @@
     "name": "Apollonia Saintclair",
     "description": "art by Apollonia Saintclair",
     "preview": "Apollonia Saintclair.jpg",
-    "prompt": "art by Apollonia Saintclair",
+    "prompt": "art by Apollonia Saintclair, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }

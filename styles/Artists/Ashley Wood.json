@@ -2,7 +2,7 @@
     "name": "Ashley Wood",
     "description": "art by Ashley Wood",
     "preview": "Ashley Wood.jpg",
-    "prompt": "art by Ashley Wood",
+    "prompt": "art by Ashley Wood, a painting depicting {prompt}",
     "negative": "",
     "extra": "Steps:20, Sampler:LMSD, CFG scale: 6, Seed: -1, Size: 1024x1024"
 }
