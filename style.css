@@ -1,5 +1,5 @@
-#Stylez { position: absolute;top: 25vh;background: black;background: var(--body-background-fill);width: 50%;z-index: 1000;right: 0;height: fit-content;display: none;border: solid var(--button-primary-background-fill) !important;border-radius: 10px;border-width: 2px !important;box-shadow: #00000094 0px 0px 35px 1px;}
-#style_cards_column{height: 37vh; min-width: unset !important;overflow: auto;padding-top: 10px;padding-left: 5px;}
+#Stylez { position: absolute;top: 20vh;background: black;background: var(--body-background-fill);width: 50%;z-index: 1000;right: 0;height: fit-content;display: none;border: solid var(--button-primary-background-fill) !important;border-radius: 10px;border-width: 2px !important;box-shadow: #00000094 0px 0px 35px 1px;}
+#style_cards_column{height: 45vh; min-width: unset !important;overflow: auto;padding-top: 0px;padding-left: 0px;}
 /*#civit_cards_column{height: 29vh; min-width: unset !important;padding-top: 10px;padding-left: 5px;}*/
 .style_card{ display: flex; flex-direction: column; align-items: center; justify-content: center;float: left; contain: content;margin-top: unset !important; margin: 5px;}
 .styles_overlay{position: absolute;width: 100%; ;height:100% ;background-color: rgba(46, 46, 46, 0.642);opacity: 0; transition:opacity 0.5s ease;}
@@ -27,7 +27,7 @@
 #previewPromptNeg > label > textarea{ max-height:63px ;}
 .favouriteStyleBtn{font-size: 30px !important;position: absolute;-webkit-text-stroke-width: 1px; -webkit-text-stroke-color: black; bottom: -10px !important;left: 0px !important;}
 #style_quicklist_column{height:inherit ;min-width: unset !important;max-width:161px; background-color: var(--input-background-fill); padding: 5px; min-width: min(0px,100%) !important;}
-#styles_quicksave_list{min-height: 310px;max-height: 310px;overflow: hidden;background: var(--body-background-fill);border-radius: 5px;padding-left: 6px !important;padding-top: 6px !important;}
+#styles_quicksave_list{min-height: 330px;max-height: 330px;overflow: auto;background: var(--body-background-fill);border-radius: 5px;padding-left: 6px !important;padding-top: 6px !important;}
 /*#civit_tags_column{min-width: unset !important;max-width: 161px;}
 #civit_cards_column{height: 37vh;}*/
 .styles_quicksave{text-wrap: nowrap;display: flex;align-items: center;border-style: solid;background: var(--input-background-fill);border-radius:5px;max-width: fit-content !important;min-width: -webkit-fill-available;}
@@ -41,7 +41,7 @@
 .stylezPreviewBox{position: fixed;display: none;bottom: 10px;left: 10px;width: 400px;background-color:var(--body-background-fill);border: 1px solid #ccc;padding: 10px;border: solid var(--button-primary-background-fill) !important;border-radius: 10px;border-width: 2px !important;box-shadow: #00000094 0px 0px 35px 1px;}
 #style_Catagory{align-self: flex-end;}
 /*#civitai_cardholder{overflow: auto;height: 36vh;}*/
-#styles_generator{height: 440px;}
+#styles_generator{height: fit-content;}
 .stylez_promptgenbox > label > textarea{ overflow-y: scroll;max-height: 168px !important;min-height: 168px;}
 /*#civitaiimages_loading{text-align-last: center;position: absolute;z-index: 9;background: #000000bd;width: -webkit-fill-available;height: -webkit-fill-available;backdrop-filter: blur(5px);}
 #civitaiimages_loading p{margin: 0;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%); color: var(--button-primary-background-fill);font-size: 50px;text-shadow: 0 0 20px #fff0, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;}*/
@@ -72,35 +72,35 @@
 }
 
 /* 假设你想要在屏幕宽度小于1440px时隐藏该元素 */
-@media screen and (max-width: 1318px) {
+@media screen and (max-width: 1200px) {
     #HoverOverStyle_preview {
         display: none;
     }
 }
 
 /* 假设你想要在屏幕宽度小于1440px时隐藏该元素 */
-@media screen and (max-width: 1618px) {
+@media screen and (max-width: 1500px) {
     #hide_default_styles {
         display: none;
     }
 }
 
 /* 假设你想要在屏幕宽度小于1440px时隐藏该元素 */
-@media screen and (max-width: 1098px) {
+@media screen and (max-width: 980px) {
     #styles_apply_neg {
         display: none;
     }
 }
 
 /* 假设你想要在屏幕宽度小于1440px时隐藏该元素 */
-@media screen and (max-width: 818px) {
+@media screen and (max-width: 680px) {
     #styles_apply_prompt {
         display: none;
     }
 }
 
 /* 假设你想要在屏幕宽度小于1440px时隐藏该元素 */
-@media screen and (max-width: 818px) {
+@media screen and (max-width: 680px) {
     #card_thumb_size {
         display: none;
     }
