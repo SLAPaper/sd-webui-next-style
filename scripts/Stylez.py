@@ -357,8 +357,8 @@ def add_tab():
                             with gr.Column(elem_id="style_cards_column"):
                                 Styles_html=gr.HTML(generate_styles_and_tags[0])
                 with gr.Row(elem_id="stylesPreviewRow"):
-                    gr.Checkbox(value=True,label="应用/移除提示词", elem_id="styles_apply_prompt", elem_classes="styles_checkbox checkbox", lines=1)
-                    gr.Checkbox(value=True,label="应用/移除提示词", elem_id="styles_apply_neg", elem_classes="styles_checkbox checkbox", lines=1)
+                    gr.Checkbox(value=True,label="应用/移除正向词", elem_id="styles_apply_prompt", elem_classes="styles_checkbox checkbox", lines=1)
+                    gr.Checkbox(value=True,label="应用/移除负向词", elem_id="styles_apply_neg", elem_classes="styles_checkbox checkbox", lines=1)
                     gr.Checkbox(value=True,label="悬停预览", elem_id="HoverOverStyle_preview", elem_classes="styles_checkbox checkbox", lines=1)
                     oldstylesCB = gr.Checkbox(value=hideoldstyles,label="隐藏原始样式栏", elem_id="hide_default_styles", elem_classes="styles_checkbox checkbox", lines=1,interactive=True)
                     setattr(oldstylesCB,"do_not_save_to_config",True)
