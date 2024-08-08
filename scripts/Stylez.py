@@ -10,6 +10,7 @@ import csv
 import re
 from modules import scripts, shared,script_callbacks
 from scripts import promptgen as PG
+from scripts import superprompt as SP
 
 extension_path = scripts.basedir()
 refresh_symbol = '\U0001f504'  # 🔄
@@ -322,9 +323,12 @@ def oldstyles(value):
         else:
             save_settings("hide_old_styles",True)
 
-def generate_style(prompt,temperature,top_k,max_length,repitition_penalty,usecomma):
-    result = PG.generate(prompt,temperature,top_k,max_length,repitition_penalty,usecomma)
+def generate_style(prompt,temperature,top_k,style_max_length,repitition_penalty,usecomma):
+    result = PG.generate(prompt,temperature,top_k,style_max_length,repitition_penalty,usecomma)
     return gr.update(value=result)
+
+def call_generate_super_prompt(prompt,superprompt_max_length):
+    return SP.generate_super_prompt(prompt,max_new_tokens=superprompt_max_length)
 
 def add_tab():
     generate_styles_and_tags = generate_html_code()
@@ -405,6 +409,26 @@ def add_tab():
                         style_max_length = gr.Slider(label="最大字符数量:", minimum=1, maximum=160 ,value=80,step=1)
                         style_gen_repitition_penalty = gr.Slider(label="重复惩罚:", minimum=0.1, maximum=2 ,value=1.2,step=0.1)
 
+            with gr.TabItem(label="超级提示词", elem_id="superprompt_generator"):
+                with gr.Row():
+                    with gr.Column():
+                        superprompt_input_txt = gr.Textbox(label="输入:", lines=7, placeholder="在这里输入原始提示词。", elem_classes="superprompt_box")
+                        with gr.Row():
+                            superprompt_gen_btn = gr.Button("获取正向提示词", elem_id="style_superprompt_btn")
+                    with gr.Column():
+                        superprompt_output_txt = gr.Textbox(label="输出:", lines=7, placeholder="生成润色后的自然语言提示词", elem_classes="superprompt_box")
+                        with gr.Row():
+                            style_super_btn = gr.Button("生成",elem_id="style_superprompt_btn")
+                            superprompt_apply_btn = gr.Button("应用正向提示词", elem_id="style_superprompt_send_btn")
+                with gr.Row():
+                    superprompt_max_length = gr.Slider(
+                        label="最大字符量:", 
+                        minimum=1, 
+                        maximum=200, 
+                        value=77, 
+                        step=1
+                    )
+
             with gr.TabItem(label="风格编辑器",elem_id="styles_editor"):
                 with gr.Row():
                     with gr.Column():
@@ -452,6 +476,9 @@ def add_tab():
         style_gengrab_btn.click(fn=None,_js="stylesgrabprompt" ,outputs=[style_geninput_txt])
         style_gensend_btn.click(fn=None,_js='sendToPromtbox',inputs=[style_genoutput_txt])
         style_gen_btn.click(fn=generate_style,inputs=[style_geninput_txt,style_gen_temp,style_gen_top_k,style_max_length,style_gen_repitition_penalty,style_genusecomma_btn],outputs=[style_genoutput_txt])
+        superprompt_gen_btn.click(fn=None,_js="stylesgrabprompt" ,outputs=[superprompt_input_txt])
+        superprompt_apply_btn.click(fn=None,_js='sendToPromtbox',inputs=[superprompt_output_txt])
+        style_super_btn.click(fn=call_generate_super_prompt,inputs=[superprompt_input_txt,superprompt_max_length],outputs=[superprompt_output_txt])
         oldstylesCB.change(fn=oldstyles,inputs=[oldstylesCB],_js="hideOldStyles")
         refresh_button.click(fn=refresh_styles,inputs=[category_dropdown], outputs=[Styles_html,category_dropdown,category_dropdown,style_savefolder_txt])
         card_size_slider.release(fn=save_card_def,inputs=[card_size_slider])

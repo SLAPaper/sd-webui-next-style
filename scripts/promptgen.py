@@ -23,14 +23,14 @@ def modelcheck():
         print( '\033[92m' + f"""No Model Found, Please run 'git clone https://huggingface.co/FredZhang7/distilgpt2-stable-diffusion-v2' to the {extension_path}""" + '\033[0m\n')
         return False
 
-def generate(prompt,temperature,top_k,max_length,repitition_penalty,usecomma):
+def generate(prompt,temperature,top_k,style_max_length,repitition_penalty,usecomma):
     model_found = modelcheck()
     if (model_found == True):
         input_ids = tokenizer(prompt, return_tensors='pt').input_ids
         if(usecomma == False):
-            output = model.generate(input_ids, do_sample=True, temperature=temperature, top_k=top_k, max_length=max_length, num_return_sequences=num_return_sequences, repetition_penalty=repitition_penalty, penalty_alpha=0.6, no_repeat_ngram_size=1, early_stopping=False)
+            output = model.generate(input_ids, do_sample=True, temperature=temperature, top_k=top_k, style_max_length=style_max_length, num_return_sequences=num_return_sequences, repetition_penalty=repitition_penalty, penalty_alpha=0.6, no_repeat_ngram_size=1, early_stopping=False)
         else:
-            output = model.generate(input_ids, do_sample=True, temperature=temperature, top_k=top_k, max_length=max_length, num_return_sequences=num_return_sequences, repetition_penalty=repitition_penalty, early_stopping=True)
+            output = model.generate(input_ids, do_sample=True, temperature=temperature, top_k=top_k, style_max_length=style_max_length, num_return_sequences=num_return_sequences, repetition_penalty=repitition_penalty, early_stopping=True)
         for i in range(len(output)):
             output_decoded = (tokenizer.decode(output[i], skip_special_tokens=True))
         return(output_decoded)
