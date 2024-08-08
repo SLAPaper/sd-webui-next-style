@@ -2,6 +2,6 @@
     "name": "\u5de5\u7b14",
     "description": "\u5de5\u7b14\u753b",
     "preview": "\u5de5\u7b14.jpg",
-    "prompt": "(Masterpiece), Chinese Gongbi Painting, a painting of {prompt}, Line Drawing, Light Color, simple background, soft color gradient, atmospheric effect, velvet like texture, rich contrast, fine details, matching process, delete lines, subtitle shadows, expressive and emotional atmosphere, visible paper texture, colorful washing, ink, artistic depth, depth of field effects permanent branches, <lora:offset_0.2:0.1>",
+    "prompt": "(Masterpiece), Chinese Gongbi Painting, a painting of {prompt}, Line Drawing, Light Color, simple background, soft color gradient, atmospheric effect, velvet like texture, rich contrast, fine details, matching process, delete lines, subtitle shadows, expressive and emotional atmosphere, visible paper texture, colorful washing, ink, artistic depth, depth of field effects permanent branches",
     "negative": "Japanese clothing, Korean clothing, text, watermark, (worst quality:1.6), (low quality:1.6), (normal quality:1.6), lowres, bad anatomy, bad hands, vaginas in breasts, ((monochrome)), ((grayscale)), collapsed eyeshadow, multiple eyebrow, (cropped), oversaturated, extra limb, missing limbs, deformed hands, long neck, long body, imperfect, (bad hands), signature, watermark, username"
 }

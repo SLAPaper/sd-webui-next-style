@@ -1,0 +1,7 @@
+{
+    "name": "Scandinavian-style",
+    "description": "\u65af\u582a\u7684\u7eb3\u7ef4\u4e9a\u98ce\u683c",
+    "preview": "Scandinavian-style.jpg",
+    "prompt": "A Scandinavian-style {prompt}, best quality, highly detailed, masterpiece, ultra-detailed, 4k, CG rendering, Off-Center",
+    "negative": "bad, ugly, deformed, noisy, blurry, low contrast, lowres, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username"
+}

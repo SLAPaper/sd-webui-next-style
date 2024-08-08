@@ -1,0 +1,7 @@
+{
+    "name": "Modern Chinese-style",
+    "description": "\u73b0\u4ee3\u4e2d\u5f0f\u98ce\u683c",
+    "preview": "Modern Chinese-style.jpg",
+    "prompt": "a Modern Chinese-style {prompt}, best quality, highly detailed, masterpiece, ultra-detailed, 4k, CG rendering, Off-Center",
+    "negative": "bad, ugly, deformed, noisy, blurry, low contrast, lowres, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username"
+}

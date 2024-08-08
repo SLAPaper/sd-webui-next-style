@@ -2,6 +2,6 @@
     "name": "\u56fd\u753b",
     "description": "\u4e2d\u56fd\u5c71\u6c34\u753b",
     "preview": "\u56fd\u753b.jpg",
-    "prompt": "Chinese landscape painting, architectural complex, clouds and mist, pine trees, meticulous landscape painting, small peaks, waterfalls, clear rivers at the foot, dotted with several jade trees and small slopes on the shore, with an endless light ink distant mountain as the background, outlining the mountains and rivers with lines, presenting a fresh and natural atmosphere, It has green, dark green, and light green tones, <lora:offset_0.2:0.1>",
+    "prompt": "Chinese landscape painting, architectural complex, clouds and mist, pine trees, meticulous landscape painting, small peaks, waterfalls, clear rivers at the foot, dotted with several jade trees and small slopes on the shore, with an endless light ink distant mountain as the background, outlining the mountains and rivers with lines, presenting a fresh and natural atmosphere, It has green, dark green, and light green tones",
     "negative": "text, watermark, (worst quality:1.6), (low quality:1.6), (normal quality:1.6), lowres, bad anatomy, bad hands, vaginas in breasts, ((monochrome)), ((grayscale)), collapsed eyeshadow, multiple eyebrow, (cropped), oversaturated, extra limb, missing limbs, deformed hands, long neck, long body, imperfect, (bad hands), signature, watermark, username"
 }

@@ -2,6 +2,6 @@
     "name": "misc-zentangle",
     "description": "\u6742\u9879\u2022\u7985\u7ed5\u753b",
     "preview": "misc-zentangle.jpg",
-    "prompt": "zentangle {prompt} . intricate, abstract, monochrome, patterns, meditative, highly detailed",
+    "prompt": "zentangle {prompt}, intricate, abstract, monochrome, patterns, meditative, highly detailed",
     "negative": "colorful, representative, simplistic, large fields of color"
 }

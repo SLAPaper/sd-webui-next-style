@@ -1,0 +1,7 @@
+{
+    "name": "Gothic architecture-style",
+    "description": "\u54e5\u7279\u5f0f\u5efa\u7b51",
+    "preview": "Gothic architecture-style.jpg",
+    "prompt": "a Gothic architecture-style {prompt}, best quality, highly detailed, masterpiece, ultra-detailed, 4k, CG rendering, (landscape:1.6), Off-Center",
+    "negative": "bad, ugly, deformed, noisy, blurry, low contrast, lowres, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username"
+}

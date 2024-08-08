@@ -1,0 +1,7 @@
+{
+    "name": "Japonism-style",
+    "description": "\u65e5\u672c\u4e3b\u4e49\u98ce\u683c",
+    "preview": "Japonism-style.jpg",
+    "prompt": "a Japonism-style {prompt}, blending traditional Japanese design elements with European art nouveau influences. The space should be filled with intricate floral and botanical motifs, Japanese art pieces, and furniture that combines the sleek lines of Japanese aesthetic with the ornate details of European decadence, best quality, highly detailed, masterpiece, ultra-detailed, 4k, CG rendering, Off-Center",
+    "negative": "bad, ugly, deformed, noisy, blurry, low contrast, lowres, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username"
+}

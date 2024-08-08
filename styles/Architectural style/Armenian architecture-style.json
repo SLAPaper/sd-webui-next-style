@@ -1,0 +1,7 @@
+{
+    "name": "Armenian architecture-style",
+    "description": "\u4e9a\u7f8e\u5c3c\u4e9a\u5efa\u7b51",
+    "preview": "Armenian architecture-style.jpg",
+    "prompt": "an Armenian architecture-style {prompt}, best quality, highly detailed, masterpiece, ultra-detailed, 4k, CG rendering, (landscape:1.6), Off-Center",
+    "negative": "bad, ugly, deformed, noisy, blurry, low contrast, lowres, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username"
+}

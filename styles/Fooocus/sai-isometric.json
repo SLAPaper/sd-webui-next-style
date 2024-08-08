@@ -2,6 +2,6 @@
     "name": "sai-isometric",
     "description": "SAI\u2022\u7b49\u89d2\u900f\u89c6",
     "preview": "sai-isometric.jpg",
-    "prompt": "isometric style {prompt} . vibrant, beautiful, crisp, detailed, ultra detailed, intricate",
+    "prompt": "isometric style {prompt}, vibrant, beautiful, crisp, detailed, ultra detailed, intricate",
     "negative": "deformed, mutated, ugly, disfigured, blur, blurry, noise, noisy, realistic, photographic"
 }

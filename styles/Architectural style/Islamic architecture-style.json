@@ -1,0 +1,7 @@
+{
+    "name": "Islamic architecture-style",
+    "description": "\u4f0a\u65af\u5170\u5efa\u7b51",
+    "preview": "Islamic architecture-style.jpg",
+    "prompt": "an Islamic architecture-style {prompt}, best quality, highly detailed, masterpiece, ultra-detailed, 4k, CG rendering, (landscape:1.6), Off-Center",
+    "negative": "bad, ugly, deformed, noisy, blurry, low contrast, lowres, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username"
+}

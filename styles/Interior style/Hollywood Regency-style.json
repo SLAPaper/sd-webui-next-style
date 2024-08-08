@@ -1,0 +1,7 @@
+{
+    "name": "Hollywood Regency-style",
+    "description": "\u597d\u83b1\u575e\u6444\u653f\u98ce\u683c",
+    "preview": "Hollywood Regency-style.jpg",
+    "prompt": "a Hollywood Regency-style {prompt}, best quality, highly detailed, masterpiece, ultra-detailed, 4k, CG rendering, Off-Center",
+    "negative": "bad, ugly, deformed, noisy, blurry, low contrast, lowres, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "Queenslander architecture-style",
+    "description": "\u6606\u58eb\u5170\u98ce\u683c\u5efa\u7b51",
+    "preview": "Queenslander architecture-style.jpg",
+    "prompt": "a Queenslander architecture-style {prompt}, best quality, highly detailed, masterpiece, ultra-detailed, 4k, CG rendering, (landscape:1.6), Off-Center",
+    "negative": "bad, ugly, deformed, noisy, blurry, low contrast, lowres, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username"
+}

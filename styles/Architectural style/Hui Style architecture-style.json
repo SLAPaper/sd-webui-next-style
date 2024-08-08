@@ -1,0 +1,7 @@
+{
+    "name": "Hui Style architecture-style",
+    "description": "\u4e2d\u56fd\u5fbd\u6d3e\u5efa\u7b51",
+    "preview": "Hui Style architecture-style.jpg",
+    "prompt": "a Chinese Hui Style architecture-style {prompt} with white walls, grey brick, and black tile, Yin Yu Tang House, best quality, highly detailed, masterpiece, ultra-detailed, 4k, CG rendering, (landscape:1.6), Off-Center",
+    "negative": "bad, ugly, deformed, noisy, blurry, low contrast, lowres, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username"
+}

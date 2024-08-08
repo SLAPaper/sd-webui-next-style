@@ -1,0 +1,7 @@
+{
+    "name": "Architecture of Mongolia-style",
+    "description": "\u4e2d\u56fd\u8499\u53e4\u5efa\u7b51",
+    "preview": "Architecture of Mongolia-style.jpg",
+    "prompt": "an Architecture of Mongolia-style {prompt}, yurt, ger, best quality, highly detailed, masterpiece, ultra-detailed, 4k, CG rendering, (landscape:1.6), Off-Center",
+    "negative": "bad, ugly, deformed, noisy, blurry, low contrast, lowres, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username"
+}

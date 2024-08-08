@@ -2,6 +2,6 @@
     "name": "\u666f\u89c2",
     "description": "\u666f\u89c2",
     "preview": "\u666f\u89c2.jpg",
-    "prompt": "minimalist landscape, masterpiece, best quality, high quality, extremely detailed wallpaper of cg unity 8k, award winning photography, void, shallow depth of field, chromatic_aberration, extremely detailed, popular on art stations, intricate complex, high detail texture, dramatic strong, the art of midway, scenery, mountain, no humans, outdoors, sky, landscape, wide angle lens, <lora:offset_0.2:0.1>",
+    "prompt": "minimalist landscape, masterpiece, best quality, high quality, extremely detailed wallpaper of cg unity 8k, award winning photography, void, shallow depth of field, chromatic_aberration, extremely detailed, popular on art stations, intricate complex, high detail texture, dramatic strong, the art of midway, scenery, mountain, no humans, outdoors, sky, landscape, wide angle lens",
     "negative": "text, watermark, (worst quality:1.6), (low quality:1.6), (normal quality:1.6), lowres, bad anatomy, bad hands, vaginas in breasts, ((monochrome)), ((grayscale)), collapsed eyeshadow, multiple eyebrow, (cropped), oversaturated, extra limb, missing limbs, deformed hands, long neck, long body, imperfect, (bad hands), signature, watermark, username"
 }

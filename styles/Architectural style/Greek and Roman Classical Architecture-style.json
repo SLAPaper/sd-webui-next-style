@@ -1,0 +1,7 @@
+{
+    "name": "Greek and Roman Classical Architecture-style",
+    "description": "\u5e0c\u814a\u548c\u7f57\u9a6c\u53e4\u5178\u5efa\u7b51",
+    "preview": "Greek and Roman Classical Architecture-style.jpg",
+    "prompt": "a Greek and Roman Classical Architecture-style {prompt}, best quality, highly detailed, masterpiece, ultra-detailed, 4k, CG rendering, (landscape:1.6), Off-Center",
+    "negative": "bad, ugly, deformed, noisy, blurry, low contrast, lowres, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username"
+}

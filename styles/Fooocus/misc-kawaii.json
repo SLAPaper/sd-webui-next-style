@@ -2,6 +2,6 @@
     "name": "misc-kawaii",
     "description": "\u6742\u9879\u2022\u53ef\u7231\u98ce",
     "preview": "misc-kawaii.jpg",
-    "prompt": "kawaii style {prompt} . cute, adorable, brightly colored, cheerful, anime influence, highly detailed",
+    "prompt": "kawaii style {prompt}, cute, adorable, brightly colored, cheerful, anime influence, highly detailed",
     "negative": "dark, scary, realistic, monochrome, abstract"
 }

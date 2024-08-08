@@ -1,0 +1,7 @@
+{
+    "name": "Traditional Chinese architecture-style",
+    "description": "\u4e2d\u56fd\u4f20\u7edf\u5efa\u7b51",
+    "preview": "Traditional Chinese architecture-style.jpg",
+    "prompt": "a Traditional Chinese architecture-style {prompt}, best quality, highly detailed, masterpiece, ultra-detailed, 4k, CG rendering, (landscape:1.6), Off-Center",
+    "negative": "bad, ugly, deformed, noisy, blurry, low contrast, lowres, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "Persian architecture-style",
+    "description": "\u6ce2\u65af\u5efa\u7b51",
+    "preview": "Persian architecture-style.jpg",
+    "prompt": "a Persian architecture-style {prompt} with tapered brick columns, large arcades, and arches made of large piles of bricks, Shah Mosque, best quality, highly detailed, masterpiece, ultra-detailed, 4k, CG rendering, (landscape:1.6), Off-Center",
+    "negative": "bad, ugly, deformed, noisy, blurry, low contrast, lowres, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username"
+}

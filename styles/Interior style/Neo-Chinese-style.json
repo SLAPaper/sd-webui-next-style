@@ -1,0 +1,7 @@
+{
+    "name": "Neo-Chinese-style",
+    "description": "\u65b0\u4e2d\u5f0f\u98ce\u683c",
+    "preview": "Neo-Chinese-style.jpg",
+    "prompt": "a Neo-Chinese-style {prompt}, best quality, highly detailed, masterpiece, ultra-detailed, 4k, CG rendering, Off-Center",
+    "negative": "bad, ugly, deformed, noisy, blurry, low contrast, lowres, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username"
+}

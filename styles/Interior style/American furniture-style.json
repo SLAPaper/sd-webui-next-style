@@ -1,0 +1,7 @@
+{
+    "name": "American furniture-style",
+    "description": "\u7f8e\u56fd\u5bb6\u5177\u98ce\u683c",
+    "preview": "American furniture-style.jpg",
+    "prompt": "an American furniture-style {prompt}, best quality, highly detailed, masterpiece, ultra-detailed, 4k, CG rendering, Off-Center",
+    "negative": "bad, ugly, deformed, noisy, blurry, low contrast, lowres, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username"
+}

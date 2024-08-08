@@ -1,0 +1,7 @@
+{
+    "name": "neoclassical-style",
+    "description": "\u65b0\u53e4\u5178\u4e3b\u4e49\u98ce\u683c",
+    "preview": "neoclassical-style.jpg",
+    "prompt": "a neoclassical-style {prompt}, best quality, highly detailed, masterpiece, ultra-detailed, 4k, CG rendering, Off-Center",
+    "negative": "bad, ugly, deformed, noisy, blurry, low contrast, lowres, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username"
+}

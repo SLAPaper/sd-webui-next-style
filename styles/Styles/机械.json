@@ -2,6 +2,6 @@
     "name": "\u673a\u68b0",
     "description": "\u673a\u68b0\u98ce\u683c",
     "preview": "\u673a\u68b0.jpg",
-    "prompt": "BioMechanical style, Full body, robot, colorful, semi transparent shell, semi transparent skin, macro shooting, dark background, Semi transparent mechanical {prompt}, <lora:offset_0.2:0.1>",
+    "prompt": "BioMechanical style, Full body, robot, colorful, semi transparent shell, semi transparent skin, macro shooting, dark background, Semi transparent mechanical {prompt}",
     "negative": "text, watermark, worst quality:1.6, (low quality:1.6), (normal quality:1.6), lowres, bad anatomy, bad hands, vaginas in breasts, ((monochrome)), ((grayscale)), collapsed eyeshadow, multiple eyebrow, (cropped), oversaturated, extra limb, missing limbs, deformed hands, long neck, long body, imperfect, (bad hands), signature, watermark, username"
 }

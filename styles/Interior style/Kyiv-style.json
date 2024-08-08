@@ -1,0 +1,7 @@
+{
+    "name": "Kyiv-style",
+    "description": "\u57fa\u8f85\u98ce\u683c",
+    "preview": "Kyiv-style.jpg",
+    "prompt": "a Scandinavian and Industrial-style {prompt}, best quality, highly detailed, masterpiece, ultra-detailed, 4k, CG rendering, Off-Center",
+    "negative": "bad, ugly, deformed, noisy, blurry, low contrast, lowres, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username"
+}

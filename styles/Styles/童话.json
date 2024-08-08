@@ -2,6 +2,6 @@
     "name": "\u7ae5\u8bdd",
     "description": "\u7ae5\u8bdd",
     "preview": "\u7ae5\u8bdd.jpg",
-    "prompt": "a paiting of {prompt}, Magical aura, Fantasy Art, Marc Chagall, Majestic landscape view, Enchanted forest perspective, colorful light, dappled light, <lora:offset_0.2:0.1>",
+    "prompt": "a paiting of {prompt}, Magical aura, Fantasy Art, Marc Chagall, Majestic landscape view, Enchanted forest perspective, colorful light, dappled light",
     "negative": "text, watermark, (worst quality:1.6), (low quality:1.6), (normal quality:1.6), lowres, bad anatomy, bad hands, vaginas in breasts, ((monochrome)), ((grayscale)), collapsed eyeshadow, multiple eyebrow, (cropped), oversaturated, extra limb, missing limbs, deformed hands, long neck, long body, imperfect, (bad hands), signature, watermark, username"
 }

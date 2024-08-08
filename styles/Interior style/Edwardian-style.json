@@ -1,0 +1,7 @@
+{
+    "name": "Edwardian-style",
+    "description": "\u7231\u5fb7\u534e\u98ce\u683c",
+    "preview": "Edwardian-style.jpg",
+    "prompt": "an Edwardian-style {prompt}, best quality, highly detailed, masterpiece, ultra-detailed, 4k, CG rendering, Off-Center",
+    "negative": "bad, ugly, deformed, noisy, blurry, low contrast, lowres, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username"
+}

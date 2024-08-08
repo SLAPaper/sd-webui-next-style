@@ -2,6 +2,6 @@
     "name": "Oil Painting",
     "description": "\u4e61\u6751\u6cb9\u753b",
     "preview": "Oil Painting.jpg",
-    "prompt": "A simple and rustic countryside with simple colors, visual sense, masterpiece, the highest quality, high-quality, high-end details, (depth of field:1.6), oil painting, art close-up, (an oil painting depicting {prompt}), Chinese countryside, Cao Buning, Song Maojin, Jiangnan style, Wuzhen, <lora:add-detail-xl:2>, <lora:oil_SDXL_v1.0:0.6>",
+    "prompt": "A simple and rustic countryside with simple colors, visual sense, masterpiece, the highest quality, high-quality, high-end details, (depth of field:1.6), oil painting, art close-up, (an oil painting depicting {prompt}), Chinese countryside, Cao Buning, Song Maojin, Jiangnan style, Wuzhen",
     "negative": "text, watermark, (worst quality:1.6), (low quality:1.6), (normal quality:1.6), lowres, bad anatomy, bad hands, vaginas in breasts, ((monochrome)), ((grayscale)), collapsed eyeshadow, multiple eyebrow, (cropped), oversaturated, extra limb, missing limbs, deformed hands, long neck, long body, imperfect, (bad hands), signature, watermark, username"
 }
