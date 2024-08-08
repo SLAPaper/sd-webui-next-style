@@ -323,8 +323,8 @@ def oldstyles(value):
         else:
             save_settings("hide_old_styles",True)
 
-def generate_style(prompt,temperature,top_k,style_max_length,repitition_penalty,usecomma):
-    result = PG.generate(prompt,temperature,top_k,style_max_length,repitition_penalty,usecomma)
+def generate_style(prompt,temperature,top_k,max_length,repitition_penalty,usecomma):
+    result = PG.generate(prompt,temperature,top_k,max_length,repitition_penalty,usecomma)
     return gr.update(value=result)
 
 def call_generate_super_prompt(prompt,superprompt_max_length):
