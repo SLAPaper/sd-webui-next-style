@@ -49,7 +49,7 @@ def modelcheck():
     try:
         tokenizer = GPT2Tokenizer.from_pretrained('distilgpt2')
         tokenizer.add_special_tokens({'pad_token': '[PAD]'})
-        model = GPT2LMHeadModel.from_pretrained(model_folder)
+        model = GPT2LMHeadModel.from_pretrained('distilgpt2')
         return True
     except Exception as e:
         print(f"加载模型时出错: {str(e)}")
