@@ -23,7 +23,7 @@ def download_model():
         )
         print("模型文件夹下载成功！")
     except subprocess.CalledProcessError:
-        print("模型文件夹下载失败，请手动下载。")
+        print("模型文件夹下载失败，请手动下载https://huggingface.co/FredZhang7/distilgpt2-stable-diffusion-v2。")
         return False
     return True  # 返回True表示下载成功
 
@@ -43,7 +43,7 @@ def modelcheck():
     # 确保模型文件夹路径正确
     model_folder = model_dir
     if not os.path.exists(os.path.join(model_folder, "model.safetensors")):
-        print("模型文件丢失或不完整，请检查。")
+        print("模型文件丢失或不完整，请手动下载https://huggingface.co/FredZhang7/distilgpt2-stable-diffusion-v2。")
         return False
 
     try:
@@ -85,5 +85,5 @@ def generate(prompt, temperature, top_k, style_max_length, repitition_penalty, u
             )
         return tokenizer.decode(output[0], skip_special_tokens=True)
     else:
-        gr.Warning("No Model Found. Check Command Console")
+        gr.Warning("未找到模型。请查看命令控制台信息")
         return ""

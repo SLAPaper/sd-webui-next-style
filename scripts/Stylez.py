@@ -391,7 +391,7 @@ def add_tab():
             with gr.TabItem(label="风格生成器",elem_id="styles_generator"):
                 with gr.Row():
                     with gr.Column():
-                        style_geninput_txt = gr.Textbox(label="输入:", lines=7,placeholder="在这里输入原始正向提示词。首次使用会自动下载安装模型文件，保持良好的的网络状况，需要等待几分钟时间。", elem_classes="stylez_promptgenbox")
+                        style_geninput_txt = gr.Textbox(label="输入:", lines=7,placeholder="在这里输入原始正向提示词。首次使用会自动下载安装模型文件，保持良好的的网络状况，需要等待几分钟时间。如下载失败请手动安装模型~", elem_classes="stylez_promptgenbox")
                         with gr.Row():
                             style_gengrab_btn = gr.Button("获取正向提示词",elem_id="style_promptgengrab_btn")
                     with gr.Column():
@@ -412,7 +412,7 @@ def add_tab():
             with gr.TabItem(label="超级提示词", elem_id="superprompt_generator"):
                 with gr.Row():
                     with gr.Column():
-                        superprompt_input_txt = gr.Textbox(label="输入:", lines=7, placeholder="在这里输入原始正向提示词。首次使用会自动下载安装模型文件，保持良好的的网络状况，需要等待几分钟时间。", elem_classes="superprompt_box")
+                        superprompt_input_txt = gr.Textbox(label="输入:", lines=7, placeholder="在这里输入原始正向提示词。首次使用会自动下载安装模型文件，保持良好的的网络状况，需要等待几分钟时间。如下载失败请手动安装模型~", elem_classes="superprompt_box")
                         with gr.Row():
                             superprompt_gen_btn = gr.Button("获取正向提示词", elem_id="style_superprompt_btn")
                     with gr.Column():
