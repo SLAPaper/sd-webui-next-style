@@ -323,8 +323,8 @@ def oldstyles(value):
         else:
             save_settings("hide_old_styles",True)
 
-def generate_style(prompt,temperature,top_k,max_length,repitition_penalty,usecomma):
-    result = PG.generate(prompt,temperature,top_k,max_length,repitition_penalty,usecomma)
+def generate_style(prompt,temperature,top_k,max_length,repetition_penalty,usecomma):
+    result = PG.generate(prompt,temperature,top_k,max_length,repetition_penalty,usecomma)
     return gr.update(value=result)
 
 def call_generate_super_prompt(prompt,superprompt_max_length):
@@ -407,7 +407,7 @@ def add_tab():
                         style_gen_top_k = gr.Slider(label="top_k（每步采样的字符数量）:", minimum=1, maximum=50 ,value=8,step=1)
                     with gr.Column():
                         style_max_length = gr.Slider(label="最大字符数量:", minimum=1, maximum=160 ,value=80,step=1)
-                        style_gen_repitition_penalty = gr.Slider(label="重复惩罚:", minimum=0.1, maximum=2 ,value=1.2,step=0.1)
+                        style_gen_repetition_penalty = gr.Slider(label="重复惩罚:", minimum=0.1, maximum=2 ,value=1.2,step=0.1)
 
             with gr.TabItem(label="超级提示词", elem_id="superprompt_generator"):
                 with gr.Row():
@@ -475,7 +475,7 @@ def add_tab():
         #nsfwlvl.change(fn=None,_js="refreshfetchCivitai",inputs=[nsfwlvl,sortcivit,periodcivit])
         style_gengrab_btn.click(fn=None,_js="stylesgrabprompt" ,outputs=[style_geninput_txt])
         style_gensend_btn.click(fn=None,_js='sendToPromtbox',inputs=[style_genoutput_txt])
-        style_gen_btn.click(fn=generate_style,inputs=[style_geninput_txt,style_gen_temp,style_gen_top_k,style_max_length,style_gen_repitition_penalty,style_genusecomma_btn],outputs=[style_genoutput_txt])
+        style_gen_btn.click(fn=generate_style,inputs=[style_geninput_txt,style_gen_temp,style_gen_top_k,style_max_length,style_gen_repetition_penalty,style_genusecomma_btn],outputs=[style_genoutput_txt])
         superprompt_gen_btn.click(fn=None,_js="stylesgrabprompt" ,outputs=[superprompt_input_txt])
         superprompt_apply_btn.click(fn=None,_js='sendToPromtbox',inputs=[superprompt_output_txt])
         style_super_btn.click(fn=call_generate_super_prompt,inputs=[superprompt_input_txt,superprompt_max_length],outputs=[superprompt_output_txt])
