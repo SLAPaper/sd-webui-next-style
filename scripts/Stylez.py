@@ -327,8 +327,8 @@ def generate_style(prompt,temperature,top_k,max_length,repetition_penalty,usecom
     result = PG.generate(prompt,temperature,top_k,max_length,repetition_penalty,usecomma)
     return gr.update(value=result)
 
-def call_generate_super_prompt(prompt,superprompt_max_length):
-    return SP.generate_super_prompt(prompt,max_new_tokens=superprompt_max_length)
+def call_generate_super_prompt(prompt,superprompt_max_length,superprompt_seed):
+    return SP.generate_super_prompt(prompt, max_new_tokens=superprompt_max_length, seed=superprompt_seed)
 
 def add_tab():
     generate_styles_and_tags = generate_html_code()
@@ -428,6 +428,13 @@ def add_tab():
                         value=77, 
                         step=1
                     )
+                    superprompt_seed = gr.Slider(
+                        label="种子值:", 
+                        minimum=0, 
+                        maximum=99999999, 
+                        value=42, 
+                        step=1
+                    )
 
             with gr.TabItem(label="风格编辑器",elem_id="styles_editor"):
                 with gr.Row():
@@ -478,7 +485,7 @@ def add_tab():
         style_gen_btn.click(fn=generate_style,inputs=[style_geninput_txt,style_gen_temp,style_gen_top_k,style_max_length,style_gen_repetition_penalty,style_genusecomma_btn],outputs=[style_genoutput_txt])
         superprompt_gen_btn.click(fn=None,_js="stylesgrabprompt" ,outputs=[superprompt_input_txt])
         superprompt_apply_btn.click(fn=None,_js='sendToPromtbox',inputs=[superprompt_output_txt])
-        style_super_btn.click(fn=call_generate_super_prompt,inputs=[superprompt_input_txt,superprompt_max_length],outputs=[superprompt_output_txt])
+        style_super_btn.click(fn=call_generate_super_prompt,inputs=[superprompt_input_txt,superprompt_max_length,superprompt_seed],outputs=[superprompt_output_txt])
         oldstylesCB.change(fn=oldstyles,inputs=[oldstylesCB],_js="hideOldStyles")
         refresh_button.click(fn=refresh_styles,inputs=[category_dropdown], outputs=[Styles_html,category_dropdown,category_dropdown,style_savefolder_txt])
         card_size_slider.release(fn=save_card_def,inputs=[card_size_slider])
