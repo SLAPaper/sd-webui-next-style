@@ -98,7 +98,7 @@ def modelcheck():
         print(f"加载模型时出错: {str(e)}")
         return False
         
-def generate_super_prompt(prompt, max_new_tokens=77, seed=42):
+def generate_super_prompt(prompt, max_new_tokens=128, seed=123456):
     model_found = modelcheck()
     if model_found:
         # 设置种子值

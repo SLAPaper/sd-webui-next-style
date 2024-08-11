@@ -423,16 +423,16 @@ def add_tab():
                 with gr.Row():
                     superprompt_max_length = gr.Slider(
                         label="最大字符量:", 
-                        minimum=1, 
-                        maximum=200, 
-                        value=77, 
+                        minimum=25, 
+                        maximum=512, 
+                        value=128, 
                         step=1
                     )
                     superprompt_seed = gr.Slider(
                         label="种子值:", 
                         minimum=0, 
-                        maximum=99999999, 
-                        value=42, 
+                        maximum=2**32-1, 
+                        value=123456, 
                         step=1
                     )
 
