@@ -4,6 +4,8 @@ let orgNegative = '';
 let tabname = '';
 let promptNeg = '';
 let promptPos = '';
+let arwidth = '';
+let arheight = '';
 
 function setupStylez() {
     //create new button (t2i)
@@ -594,4 +596,34 @@ function stylesgrabprompt() {
     tabname = getENActiveTab();
     promptPos = gradioApp().querySelector(`#${tabname}_prompt > label > textarea`);
     return promptPos.value
+}
+
+function sendToARbox(width, height) {
+    // 获取txt2img的宽度和高度输入框
+    var arWidthTxt2Img = gradioApp().querySelector(`#txt2img_width input`);
+    var arHeightTxt2Img = gradioApp().querySelector(`#txt2img_height input`);
+
+    // 获取img2img的宽度和高度输入框
+    var arWidthImg2Img = gradioApp().querySelector(`#img2img_width input`);
+    var arHeightImg2Img = gradioApp().querySelector(`#img2img_height input`);
+
+    // 更新txt2img的宽度和高度
+    if (arWidthTxt2Img && arHeightTxt2Img) {
+        arWidthTxt2Img.value = width;
+        arHeightTxt2Img.value = height;
+        arWidthTxt2Img.dispatchEvent(new Event('input'));
+        arHeightTxt2Img.dispatchEvent(new Event('input'));
+    } else {
+        console.error("无法找到txt2img_width或txt2img_height元素");
+    }
+
+    // 更新img2img的宽度和高度
+    if (arWidthImg2Img && arHeightImg2Img) {
+        arWidthImg2Img.value = width;
+        arHeightImg2Img.value = height;
+        arWidthImg2Img.dispatchEvent(new Event('input'));
+        arHeightImg2Img.dispatchEvent(new Event('input'));
+    } else {
+        console.error("无法找到img2img_width或img2img_height元素");
+    }
 }

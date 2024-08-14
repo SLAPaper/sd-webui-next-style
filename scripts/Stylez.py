@@ -33,7 +33,7 @@ def save_card_def(value):
     
 if not os.path.exists(config_json):
     default_config = {
-        "card_size": 118,
+        "card_size": 108,
         "card_size_min": 50,
         "card_size_max": 200,
         "autoconvert": True,
@@ -330,6 +330,9 @@ def generate_style(prompt,temperature,top_k,max_length,repetition_penalty,usecom
 def call_generate_super_prompt(prompt,superprompt_max_length,superprompt_seed):
     return SP.generate_super_prompt(prompt, max_new_tokens=superprompt_max_length, seed=superprompt_seed)
 
+def create_ar_button(label, width, height, button_class="ar-button"):
+    return gr.Button(label, elem_classes=button_class).click(fn=None, _js=f'sendToARbox({width}, {height})')
+
 def add_tab():
     generate_styles_and_tags = generate_html_code()
     nopreview = os.path.join(extension_path, "nopreview.jpg")
@@ -337,11 +340,6 @@ def add_tab():
     with gr.Blocks(analytics_enabled=False,) as ui:
         with gr.Tabs(elem_id = "Stylez"): 
             gr.HTML("""<div id="stylezPreviewBoxid" class="stylezPreviewBox"><p id="stylezPreviewPositive">test</p><p id="stylezPreviewNegative">test</p></div>""")
-            #with gr.TabItem(label="风格",elem_id="styles_libary"):
-            #    with gr.Column():
-            #        with gr.Column():
-            #            with gr.Tabs(elem_id = "libs"):
-
             with gr.TabItem(label="风格库"):
                 with gr.Row():                      
                     with gr.Column(elem_id="style_quicklist_column"):
@@ -462,11 +460,88 @@ def add_tab():
                             style_savefolder_txt = gr.Dropdown(label="保存至文件夹（非中文命名）:", value="Styles", choices=generate_styles_and_tags[2], elem_id="style_savefolder_txt", elem_classes="dropdown",allow_custom_value=True)
                             style_savefolder_temp = gr.Textbox(label="Save Folder:", lines=1, elem_id="style_savefolder_temp",visible=False)
                         style_savefolder_refrsh_btn = gr.Button(refresh_symbol, elem_classes="tool")
-            
-            with gr.TabItem(label="注意"):  # 新增的Tab标题
-                #gr.Text(value="https://www.disambo.com", label="标题", interactive=False)  # 只读文本
+
+            with gr.TabItem(label="尺寸设置", elem_id="Size settings"):
+                with gr.Row():
+                    with gr.Column():
+                        gr.Markdown("""<p style="color: #F36812; font-size: 14px; height: 14px; margin: -5px 0px;">宽度×高度（SDXL）:</p>""")
+                        with gr.Row():
+                            create_ar_button("1024×1024 | 1:1", 1024, 1024, button_class="ar2-button")
+                        with gr.Row():
+                            create_ar_button("576×1728 | 1:3", 576, 1728)
+                            create_ar_button("1728×576 | 3:1", 1728, 576)
+                            create_ar_button("576×1664 | 9:26", 576, 1664)
+                            create_ar_button("1664×576 | 26:9", 1664, 576)
+                        with gr.Row():
+                            create_ar_button("640×1600 | 2:5", 640, 1600)
+                            create_ar_button("1600×640 | 5:2", 1600, 640)
+                            create_ar_button("640×1536 | 5:12", 640, 1536)
+                            create_ar_button("1536×640 | 12:5", 1536, 640)
+                        with gr.Row():
+                            create_ar_button("704×1472 | 11:23", 704, 1472)
+                            create_ar_button("1472×704 | 23:11", 1472, 704)
+                            create_ar_button("704×1408 | 1:2", 704, 1408)
+                            create_ar_button("1408×704 | 2:1", 1408, 704)
+                        with gr.Row():
+                            create_ar_button("704×1344 | 11:21", 704, 1344)
+                            create_ar_button("1344×704 | 21:11", 1344, 704)
+                            create_ar_button("768×1344 | 4:7", 768, 1344)
+                            create_ar_button("1344×768 | 7:4", 1344, 768, button_class="ar2-button")
+                        with gr.Row():
+                            create_ar_button("768×1280 | 3:5", 768, 1280)
+                            create_ar_button("1280×768 | 5:3", 1280, 768)
+                            create_ar_button("832×1216 | 13:19", 832, 1216, button_class="ar2-button")
+                            create_ar_button("1216×832 | 19:13", 1216, 832)
+                        with gr.Row():
+                            create_ar_button("832×1152 | 13:18", 832, 1152)
+                            create_ar_button("1152×832 | 18:13", 1152, 832)
+                            create_ar_button("896×1152 | 7:9", 896, 1152)
+                            create_ar_button("1152×896 | 9:7", 1152, 896)
+                        with gr.Row():
+                            create_ar_button("896×1088 | 14:17", 896, 1088)
+                            create_ar_button("1088×896 | 17:14", 1088, 896)
+                            create_ar_button("960×1088 | 15:17", 960, 1088)
+                            create_ar_button("1088×960 | 17:15", 1088, 960)
+                        with gr.Row():
+                            create_ar_button("960×1024 | 15:16", 960, 1024)
+                            create_ar_button("1024×960 | 16:15", 1024, 960)
+                        gr.Markdown("""<p style="color: #F36812; font-size: 14px; height: 14px; margin: -5px 0px;">宽度×高度（SD1.5）:</p>""")
+                        with gr.Row():
+                            create_ar_button("512×512 | 1:1", 512, 512, button_class="ar2-button")
+                            create_ar_button("768×768 | 1:1", 768, 768)
+                            create_ar_button("576×1024 | 9:16", 576, 1024)
+                            create_ar_button("1024×576 | 16:9", 1024, 576)
+                        with gr.Row():
+                            create_ar_button("512×768 | 2:3", 512, 768)
+                            create_ar_button("768×512 | 3:2", 768, 512)
+                            create_ar_button("576×768 | 3:4", 576, 768)
+                            create_ar_button("768×576 | 4:3", 768, 576)
+                        gr.Markdown("""<p style="color: #F36812; font-size: 14px; height: 14px; margin: -5px 0px;">宽度×高度（Custom）近似:</p>""")
+                        with gr.Row():
+                            create_ar_button("880×1176 | 3:4", 880, 1176)
+                            create_ar_button("1176×880 | 4:3", 1176, 880)
+                            create_ar_button("768×1360 | 9:16", 768, 1360)
+                            create_ar_button("1360×768 | 16:9", 1360, 768)
+                        with gr.Row():
+                            create_ar_button("1576×656 | 2.39:1", 1576, 656)
+                            create_ar_button("1392×752 | 1.85:1", 1392, 752)
+                            create_ar_button("1176×888 | 1.33:1", 1176, 888)
+                            create_ar_button("1568×664 | 2.35:1", 1568, 664)
+                        with gr.Row():
+                            create_ar_button("1312×792 | 1.66:1", 1312, 792)
+                            create_ar_button("1224×856 | 1.43:1", 1224, 856)
+                            create_ar_button("912×1144 | 4:5", 912, 1144)
+                            create_ar_button("1296×800 | 1.618:1", 1296, 800)
+                        gr.Markdown("""<p style="color: #F36812; font-size: 14px; height: 14px; margin: -5px 0px;">宽度×高度（Custom）强制:</p>""")
+                        with gr.Row():
+                            create_ar_button("720×1280 | 9:16", 720, 1280)
+                            create_ar_button("1280×720 | 16:9", 1280, 720)
+                            create_ar_button("800×1280 | 10:16", 800, 1280)
+                            create_ar_button("1280×800 | 16:10", 1280, 800)
+
+            with gr.TabItem(label="注意"):  # 新增的Tab标题           
                 gr.Markdown("""
-                <p style="color: #F36812; font-size: 18px; margin-bottom: 8px;">注意事项：</p>
+                <p style="color: #F36812; font-size: 18px; margin-bottom: 8px; height: 12px;">注意事项：</p>
                 <p style="margin-bottom: 8px;"><span style="color: #F36812;">1. </span>需要说明的是如果你不小心使用了<span style="color: #F36812;">WebUI</span>生成按钮下面的清空提示词，此插件风格库中你已经选择的风格卡片标记并不会被同步取消，你需要刷新一下风格大类清空标记。</p>
                 <p style="margin-bottom: 8px;"><span style="color: #F36812;">2. </span>此插件提示词全部采用标准格式，如果你安装了<span style="color: #F36812;">All in one</span>这个插件，请打开设置菜单点击第二个图标进行Prompt格式调整（勾选第二项去除Prompt最后的一个逗号，其他项全部取消勾选。）</p>
                 <p style="margin-bottom: 8px;"><span style="color: #F36812;">3. </span>如果你因为网络问题无法自动下载<span style="color: #F36812;">风格生成器</span>和<span style="color: #F36812;">超级提示词</span>的相关依赖模型，可以访问我的相关文章<a href="https://www.disambo.com/2024/03/18/sd-webui-next-style/" style="color: green;">sd-webui-next-style</a>进行模型下载。</p>

@@ -107,3 +107,23 @@
 }
 
 #tab_stylez_menutab-button {display: none;}
+
+.ar-button {
+    height: 24px !important; /* 设置按钮的高度 */
+    flex-direction: column !important; /* 设置文字位置 */
+    font-size: 16px !important; /* 设置文字大小 */
+    margin: -4px 0px !important; /* 设置按钮的外边距 */
+    border-radius: 6px !important; /* 设置按钮的圆角 */
+    /* background-blend-mode: overlay;
+    background-color: #a84103 !important; */
+}
+
+.ar2-button {
+    height: 24px !important; /* 设置按钮的高度 */
+    flex-direction: column !important; /* 设置文字位置 */
+    font-size: 16px !important; /* 设置文字大小 */
+    margin: -4px 0px !important; /* 设置按钮的外边距 */
+    border-radius: 6px !important; /* 设置按钮的圆角 */
+    background-blend-mode: overlay;
+    background-color: #00c4ff40 !important;
+}
