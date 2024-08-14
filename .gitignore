@@ -6,3 +6,5 @@ scripts/__pycache__/promptgen.cpython-310.pyc
 distilgpt2-stable-diffusion-v2/
 scripts/config.json
 styles/CSVConversion
+*.pyc
+models
