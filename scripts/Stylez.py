@@ -11,6 +11,14 @@ import re
 from modules import scripts, shared,script_callbacks
 from scripts import promptgen as PG
 from scripts import superprompt as SP
+from scripts import florence as FL
+from modules import (
+    generation_parameters_copypaste as parameters_copypaste,
+)
+try:
+    from modules.call_queue import wrap_gradio_gpu_call
+except ImportError:
+    from webui import wrap_gradio_gpu_call
 
 extension_path = scripts.basedir()
 refresh_symbol = '\U0001f504'  # 🔄
@@ -434,6 +442,48 @@ def add_tab():
                         step=1
                     )
 
+            with gr.TabItem(label="提示词反推", elem_id="florence_prompt_generator"): # 新增 "提示词反推" Tab
+                with gr.Row():
+                    with gr.Column():
+                        florence_image = gr.Image(
+                            sources=["upload"],
+                            interactive=True,
+                            type="pil",
+                            elem_classes="stylez_promptgenbox", # 应用样式类
+                        )
+                        florence_model_name = gr.Dropdown(
+                            label="选择模型",
+                            choices=FL.available_models,
+                            value=FL.available_models[0],
+                        )
+                        florence_prompt_type = gr.Dropdown(
+                            label="提示类型",
+                            choices=FL.available_prompt_type,
+                            value=FL.available_prompt_type[0],
+                        )
+                        florence_max_new_token = gr.Slider(
+                            label="最大字符量", value=1024, minimum=1, maximum=4096, step=1
+                        )
+                    with gr.Column():
+                        florence_tags = gr.State(value="")
+                        florence_html_tags = gr.HTML(
+                            value="输出<br><br><br><br>",
+                            label="标签",
+                            elem_id="tags",
+                            elem_classes="stylez_promptgenbox", # 应用样式类
+                        )
+                        with gr.Row():
+                            parameters_copypaste.bind_buttons(
+                                parameters_copypaste.create_buttons(
+                                    ["txt2img", "img2img"],
+                                ),
+                                None,
+                                florence_tags,
+                            )
+                        florence_generate_btn = gr.Button(
+                            value="生成", variant="primary", elem_id="style_promptgen_btn"
+                        )
+
             with gr.TabItem(label="风格编辑器",elem_id="styles_editor"):
                 with gr.Row():
                     with gr.Column():
@@ -581,6 +631,11 @@ def add_tab():
         remove_favourite_btn.click(fn=removeFavourite, inputs=[favourite_temp])
         stylezquicksave_add.click(fn=None,_js="addQuicksave")
         stylezquicksave_clear.click(fn=None,_js="clearquicklist")
+        florence_generate_btn.click(
+            fn=wrap_gradio_gpu_call(FL.generate_prompt_fn),
+            inputs=[florence_image, florence_model_name, florence_max_new_token, florence_prompt_type],
+            outputs=[florence_tags, florence_html_tags],
+        )
     return [(ui, "stylez_menutab", "stylez_menutab")]
 
 script_callbacks.on_ui_tabs(add_tab)
