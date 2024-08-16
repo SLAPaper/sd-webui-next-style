@@ -25,6 +25,7 @@ available_prompt_type = [
     "<MORE_DETAILED_CAPTION>",
     "<DETAILED_CAPTION>",
     "<CAPTION>",
+    "<GENERATE_PROMPT>",
 ]
 
 available_models = [
@@ -32,6 +33,7 @@ available_models = [
     "microsoft/Florence-2-base-ft",
     "microsoft/Florence-2-large",
     "microsoft/Florence-2-base",
+    "MiaoshouAI/Florence-2-base-PromptGen",
 ]
 
 

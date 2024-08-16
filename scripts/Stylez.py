@@ -341,6 +341,22 @@ def call_generate_super_prompt(prompt,superprompt_max_length,superprompt_seed):
 def create_ar_button(label, width, height, button_class="ar-button"):
     return gr.Button(label, elem_classes=button_class).click(fn=None, _js=f'sendToARbox({width}, {height})')
 
+def update_prompt_types(model_name):
+    """根据选择的模型更新提示类型下拉菜单"""
+    if model_name == "MiaoshouAI/Florence-2-base-PromptGen":
+        choices = [
+            "<MORE_DETAILED_CAPTION>",
+            "<DETAILED_CAPTION>",
+            "<GENERATE_PROMPT>",
+        ]
+    else:
+        choices = [
+            "<MORE_DETAILED_CAPTION>",
+            "<DETAILED_CAPTION>",
+            "<CAPTION>",
+        ]
+    return gr.update(choices=choices)
+
 def add_tab():
     generate_styles_and_tags = generate_html_code()
     nopreview = os.path.join(extension_path, "nopreview.jpg")
@@ -635,6 +651,11 @@ def add_tab():
             fn=wrap_gradio_gpu_call(FL.generate_prompt_fn),
             inputs=[florence_image, florence_model_name, florence_max_new_token, florence_prompt_type],
             outputs=[florence_tags, florence_html_tags],
+        )
+        florence_model_name.change(
+            fn=update_prompt_types,
+            inputs=florence_model_name,
+            outputs=florence_prompt_type,
         )
     return [(ui, "stylez_menutab", "stylez_menutab")]
 
