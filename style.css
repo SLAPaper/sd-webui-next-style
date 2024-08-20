@@ -52,7 +52,7 @@
     cursor: pointer;
     display: none; /* initially hide the checkbox */
     user-select: none;
-    color: #00ff00 !important;
+    color: #daf685 !important;
 }
 
 .style_card_checkbox.checked {
@@ -61,7 +61,7 @@
 
 .style_card.selected {
     /* Insert styling for selected cards here - can include border color change etc */
-    border: 5px solid #00ff00; /* example green border for the selected card */
+    border: 5px solid #daf685; /* example green border for the selected card */
 }
 
 /* @media screen and (max-width: 1440px) {

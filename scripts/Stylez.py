@@ -530,7 +530,7 @@ def add_tab():
             with gr.TabItem(label="尺寸设置", elem_id="Size settings"):
                 with gr.Row():
                     with gr.Column():
-                        gr.Markdown("""<p style="color: #F36812; font-size: 14px; height: 14px; margin: -5px 0px;">宽度×高度（SDXL）:</p>""")
+                        gr.HTML("""<p style="color: #F36812; font-size: 14px; height: 14px; margin: -5px 0px;">宽度×高度（SDXL）:</p>""")
                         with gr.Row():
                             create_ar_button("1024×1024 | 1:1", 1024, 1024, button_class="ar2-button")
                         with gr.Row():
@@ -571,7 +571,7 @@ def add_tab():
                         with gr.Row():
                             create_ar_button("960×1024 | 15:16", 960, 1024)
                             create_ar_button("1024×960 | 16:15", 1024, 960)
-                        gr.Markdown("""<p style="color: #F36812; font-size: 14px; height: 14px; margin: -5px 0px;">宽度×高度（SD1.5）:</p>""")
+                        gr.HTML("""<p style="color: #F36812; font-size: 14px; height: 14px; margin: -5px 0px;">宽度×高度（SD1.5）:</p>""")
                         with gr.Row():
                             create_ar_button("512×512 | 1:1", 512, 512, button_class="ar2-button")
                             create_ar_button("768×768 | 1:1", 768, 768)
@@ -582,7 +582,7 @@ def add_tab():
                             create_ar_button("768×512 | 3:2", 768, 512)
                             create_ar_button("576×768 | 3:4", 576, 768)
                             create_ar_button("768×576 | 4:3", 768, 576)
-                        gr.Markdown("""<p style="color: #F36812; font-size: 14px; height: 14px; margin: -5px 0px;">宽度×高度（Custom）近似:</p>""")
+                        gr.HTML("""<p style="color: #F36812; font-size: 14px; height: 14px; margin: -5px 0px;">宽度×高度（Custom）近似:</p>""")
                         with gr.Row():
                             create_ar_button("880×1176 | 3:4", 880, 1176)
                             create_ar_button("1176×880 | 4:3", 1176, 880)
@@ -598,7 +598,7 @@ def add_tab():
                             create_ar_button("1224×856 | 1.43:1", 1224, 856)
                             create_ar_button("912×1144 | 4:5", 912, 1144)
                             create_ar_button("1296×800 | 1.618:1", 1296, 800)
-                        gr.Markdown("""<p style="color: #F36812; font-size: 14px; height: 14px; margin: -5px 0px;">宽度×高度（Custom）强制:</p>""")
+                        gr.HTML("""<p style="color: #F36812; font-size: 14px; height: 14px; margin: -5px 0px;">宽度×高度（Custom）强制:</p>""")
                         with gr.Row():
                             create_ar_button("720×1280 | 9:16", 720, 1280)
                             create_ar_button("1280×720 | 16:9", 1280, 720)
