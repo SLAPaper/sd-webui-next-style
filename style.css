@@ -37,7 +37,7 @@
 .styles_quicksave_btn{display: flex;opacity: 70%;padding-left: 5px !important;font-weight: bold !important;font-size: 10px;}
 .styles_quicksave_btn:hover{opacity: 100%;color: var(--button-primary-background-fill);}
 .styles_quicksave_apply{border-left-style:solid;border-left-width: 2px;border-color:#0000006e;display: grid;margin-bottom:unset !important;}
-#card_thumb_size{max-width: 60px;position: absolute;right: 0px;bottom: -10px;}
+/* #card_thumb_size{max-width: 60px;position: absolute;right: 0px;bottom: -10px;} */
 .stylezPreviewBox{position: fixed;display: none;bottom: 10px;left: 10px;width: 400px;background-color:var(--body-background-fill);border: 1px solid #ccc;padding: 10px;border: solid var(--button-primary-background-fill) !important;border-radius: 10px;border-width: 2px !important;box-shadow: #00000094 0px 0px 35px 1px;}
 #style_Catagory{align-self: flex-end;}
 /*#civitai_cardholder{overflow: auto;height: 36vh;}*/
@@ -64,47 +64,41 @@
     border: 5px solid #00ff00; /* example green border for the selected card */
 }
 
-/* 假设你想要在屏幕宽度小于1440px时隐藏该元素 */
-@media screen and (max-width: 1440px) {
+/* @media screen and (max-width: 1440px) {
     #style_quicklist_column {
         display: none;
     }
 }
 
-/* 假设你想要在屏幕宽度小于1440px时隐藏该元素 */
 @media screen and (max-width: 1200px) {
     #HoverOverStyle_preview {
         display: none;
     }
 }
 
-/* 假设你想要在屏幕宽度小于1440px时隐藏该元素 */
 @media screen and (max-width: 1500px) {
     #hide_default_styles {
         display: none;
     }
 }
 
-/* 假设你想要在屏幕宽度小于1440px时隐藏该元素 */
 @media screen and (max-width: 980px) {
     #styles_apply_neg {
         display: none;
     }
 }
 
-/* 假设你想要在屏幕宽度小于1440px时隐藏该元素 */
 @media screen and (max-width: 680px) {
     #styles_apply_prompt {
         display: none;
     }
 }
 
-/* 假设你想要在屏幕宽度小于1440px时隐藏该元素 */
 @media screen and (max-width: 680px) {
     #card_thumb_size {
         display: none;
     }
-}
+} */
 
 #tab_stylez_menutab-button {display: none;}
 
