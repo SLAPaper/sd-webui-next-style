@@ -134,7 +134,6 @@ function checkElement() {
         gradioApp().getElementById('style_delete_btn').addEventListener('click', () => {
             deleteRefresh();
         });
-        //setupcivitapi() //取消C站热词
     } else {
         setTimeout(checkElement, 100);
     }

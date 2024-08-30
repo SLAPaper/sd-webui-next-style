@@ -9,16 +9,13 @@ import json
 import csv
 import re
 from modules import scripts, shared,script_callbacks
-from scripts import promptgen as PG
-from scripts import superprompt as SP
-from scripts import florence as FL
 from modules import (
-    generation_parameters_copypaste as parameters_copypaste,
+    generation_parameters_copypaste as parameters_copypaste,  # type: ignore
 )
 try:
     from modules.call_queue import wrap_gradio_gpu_call
 except ImportError:
-    from webui import wrap_gradio_gpu_call
+    from webui import wrap_gradio_gpu_call  # type: ignore
 
 extension_path = scripts.basedir()
 refresh_symbol = '\U0001f504'  # 🔄
@@ -331,31 +328,8 @@ def oldstyles(value):
         else:
             save_settings("hide_old_styles",True)
 
-def generate_style(prompt,temperature,top_k,max_length,repetition_penalty,usecomma):
-    result = PG.generate(prompt,temperature,top_k,max_length,repetition_penalty,usecomma)
-    return gr.update(value=result)
-
-def call_generate_super_prompt(prompt,superprompt_max_length,superprompt_seed):
-    return SP.generate_super_prompt(prompt, max_new_tokens=superprompt_max_length, seed=superprompt_seed)
-
 def create_ar_button(label, width, height, button_class="ar-button"):
     return gr.Button(label, elem_classes=button_class).click(fn=None, _js=f'sendToARbox({width}, {height})')
-
-def update_prompt_types(model_name):
-    """根据选择的模型更新提示类型下拉菜单"""
-    if model_name == "MiaoshouAI/Florence-2-base-PromptGen":
-        choices = [
-            "<MORE_DETAILED_CAPTION>",
-            "<DETAILED_CAPTION>",
-            "<GENERATE_PROMPT>",
-        ]
-    else:
-        choices = [
-            "<MORE_DETAILED_CAPTION>",
-            "<DETAILED_CAPTION>",
-            "<CAPTION>",
-        ]
-    return gr.update(choices=choices)
 
 def add_tab():
     generate_styles_and_tags = generate_html_code()
@@ -394,116 +368,6 @@ def add_tab():
                     favourite_temp = gr.Text(elem_id="favouriteTempTxt",interactive=False,label="Positive:",lines=2,visible=False)
                     add_favourite_btn = gr.Button(elem_id="stylezAddFavourite",visible=False)
                     remove_favourite_btn = gr.Button(elem_id="stylezRemoveFavourite",visible=False)
-
-            #with gr.TabItem(label="C站热词"):
-            #    with gr.Row():
-            #        with gr.Column(elem_id="civit_tags_column"):
-            #            nsfwlvl = gr.Dropdown(label="NSFW:", choices=["None", "Soft", "Mature", "X"], value="None", lines=1, elem_id="civit_nsfwfilter", elem_classes="dropdown styles_dropdown",scale=1)
-            #            sortcivit  = gr.Dropdown(label="分类:", choices=["Most Reactions", "Most Comments", "Newest"], value="Most Reactions", lines=1, elem_id="civit_sortfilter", elem_classes="dropdown styles_dropdown",scale=1)
-            #            periodcivit  = gr.Dropdown(label="时间段:", choices=["AllTime", "Year", "Month", "Week", "Day"], value="AllTime", lines=1, elem_id="civit_periodfilter", elem_classes="dropdown styles_dropdown",scale=1)
-            #        with gr.Column():
-            #            with gr.Row(elem_id="style_search_search"):
-            #                fdg = gr.Textbox('', label="搜索框", elem_id="style_search", placeholder="不起作用！API不支持！", elem_classes="textbox", lines=1,scale=3)
-            #                civitAI_refresh = gr.Button(refresh_symbol, label="Refresh", elem_id="style_refresh", elem_classes="tool", lines=1)
-            #                pagenumber = gr.Number(label="Page:",value=1,minimum=1,visible=False)
-            #            with gr.Row():
-            #                with gr.Column(elem_id="civit_cards_column"):
-            #                    gr.HTML(f"""<div><div id="civitaiimages_loading"><p>Loading...</p></div><div onscroll="civitaiaCursorLoad(this)" id="civitai_cardholder" data-nopreview='{nopreview}'></div></div>""")
-
-            with gr.TabItem(label="提示词生成",elem_id="styles_libary"):
-                with gr.Column():
-                    with gr.Column():
-                        with gr.Tabs(elem_id = "libs"):
-
-                            with gr.TabItem(label="一般提示词",elem_id="styles_generator"):
-                                with gr.Row():
-                                    with gr.Column():
-                                        style_geninput_txt = gr.Textbox(label="输入:", lines=7,placeholder="在这里输入原始正向提示词。首次使用会自动下载安装模型文件，保持良好的的网络状况，需要等待几分钟时间。如下载失败请手动安装模型~", elem_classes="stylez_promptgenbox")
-                                        with gr.Row():
-                                            style_gengrab_btn = gr.Button("获取正向提示词",elem_id="style_promptgengrab_btn")
-                                    with gr.Column():
-                                        style_genoutput_txt = gr.Textbox(label="输出:", lines=7,placeholder="生成润色后的正向提示词",elem_classes="stylez_promptgenbox")
-                                        with gr.Row():
-                                            style_gen_btn = gr.Button("生成",elem_id="style_promptgen_btn")
-                                            style_gensend_btn = gr.Button("应用正向提示词",elem_id="style_promptgen_send_btn")
-                                with gr.Row():
-                                    style_genusecomma_btn = gr.Checkbox(label="使用逗号", value=True)
-                                with gr.Row():
-                                    with gr.Column():
-                                        style_gen_temp = gr.Slider(label="温度（越高 = 多样性更高但一致性较低）: ", minimum=0.1, maximum=1.0 ,value=0.9)
-                                        style_gen_top_k = gr.Slider(label="top_k（每步采样的字符数量）:", minimum=1, maximum=50 ,value=8,step=1)
-                                    with gr.Column():
-                                        style_max_length = gr.Slider(label="最大字符数量:", minimum=1, maximum=160 ,value=80,step=1)
-                                        style_gen_repetition_penalty = gr.Slider(label="重复惩罚:", minimum=0.1, maximum=2 ,value=1.2,step=0.1)
-
-                            with gr.TabItem(label="超级提示词", elem_id="superprompt_generator"):
-                                with gr.Row():
-                                    with gr.Column():
-                                        superprompt_input_txt = gr.Textbox(label="输入:", lines=7, placeholder="在这里输入原始正向提示词。首次使用会自动下载安装模型文件，保持良好的的网络状况，需要等待几分钟时间。如下载失败请手动安装模型~", elem_classes="superprompt_box")
-                                        with gr.Row():
-                                            superprompt_gen_btn = gr.Button("获取正向提示词", elem_id="style_superprompt_btn")
-                                    with gr.Column():
-                                        superprompt_output_txt = gr.Textbox(label="输出:", lines=7, placeholder="生成润色后的自然语言提示词", elem_classes="superprompt_box")
-                                        with gr.Row():
-                                            style_super_btn = gr.Button("生成",elem_id="style_superprompt_btn")
-                                            superprompt_apply_btn = gr.Button("应用正向提示词", elem_id="style_superprompt_send_btn")
-                                with gr.Row():
-                                    superprompt_max_length = gr.Slider(
-                                        label="最大字符量:", 
-                                        minimum=25, 
-                                        maximum=512, 
-                                        value=128, 
-                                        step=1
-                                    )
-                                    superprompt_seed = gr.Slider(
-                                        label="种子值:", 
-                                        minimum=0, 
-                                        maximum=2**32-1, 
-                                        value=123456, 
-                                        step=1
-                                    )
-
-            with gr.TabItem(label="提示词反推", elem_id="florence_prompt_generator"): # 新增 "提示词反推" Tab
-                with gr.Row():
-                    with gr.Column():
-                        florence_image = gr.Image(
-                            sources=["upload"],
-                            interactive=True,
-                            type="pil",
-                            elem_classes="stylez_promptgenbox", # 应用样式类
-                        )
-                        florence_model_name = gr.Dropdown(
-                            label="选择模型",
-                            choices=FL.available_models,
-                            value=FL.available_models[0],
-                        )
-                        florence_prompt_type = gr.Dropdown(
-                            label="提示类型",
-                            choices=FL.available_prompt_type,
-                            value=FL.available_prompt_type[0],
-                        )
-                        florence_max_new_token = gr.Slider(
-                            label="最大字符量", value=1024, minimum=1, maximum=4096, step=1
-                        )
-                    with gr.Column():
-                        florence_tags = gr.State(value="")
-                        florence_html_tags = gr.HTML(
-                            value="输出<br><br><br><br>",
-                            label="标签",
-                            elem_id="tags",
-                            elem_classes="stylez_promptgenbox", # 应用样式类
-                        )
-                        with gr.Row():
-                            parameters_copypaste.bind_buttons(
-                                parameters_copypaste.create_buttons(
-                                    ["txt2img", "img2img"],
-                                ),
-                                None,
-                                florence_tags,
-                            )
-                        florence_generate_btn = gr.Button(
-                            value="生成", variant="primary", elem_id="style_promptgen_btn"
-                        )
 
             with gr.TabItem(label="风格编辑器",elem_id="styles_editor"):
                 with gr.Row():
@@ -622,16 +486,6 @@ def add_tab():
                     <img src="https://bu.dusays.com/2024/03/10/65edbb64b1ece.png" alt="GitHub" style="height: 24px; width: 24px; margin-right: 8px;"/>
                 </a>
                 """)
-        #civitAI_refresh.click(fn=None,_js="refreshfetchCivitai",inputs=[nsfwlvl,sortcivit,periodcivit])
-        #periodcivit.change(fn=None,_js="refreshfetchCivitai",inputs=[nsfwlvl,sortcivit,periodcivit])
-        #sortcivit.change(fn=None,_js="refreshfetchCivitai",inputs=[nsfwlvl,sortcivit,periodcivit])
-        #nsfwlvl.change(fn=None,_js="refreshfetchCivitai",inputs=[nsfwlvl,sortcivit,periodcivit])
-        style_gengrab_btn.click(fn=None,_js="stylesgrabprompt" ,outputs=[style_geninput_txt])
-        style_gensend_btn.click(fn=None,_js='sendToPromtbox',inputs=[style_genoutput_txt])
-        style_gen_btn.click(fn=generate_style,inputs=[style_geninput_txt,style_gen_temp,style_gen_top_k,style_max_length,style_gen_repetition_penalty,style_genusecomma_btn],outputs=[style_genoutput_txt])
-        superprompt_gen_btn.click(fn=None,_js="stylesgrabprompt" ,outputs=[superprompt_input_txt])
-        superprompt_apply_btn.click(fn=None,_js='sendToPromtbox',inputs=[superprompt_output_txt])
-        style_super_btn.click(fn=call_generate_super_prompt,inputs=[superprompt_input_txt,superprompt_max_length,superprompt_seed],outputs=[superprompt_output_txt])
         oldstylesCB.change(fn=oldstyles,inputs=[oldstylesCB],_js="hideOldStyles")
         refresh_button.click(fn=refresh_styles,inputs=[category_dropdown], outputs=[Styles_html,category_dropdown,category_dropdown,style_savefolder_txt])
         card_size_slider.release(fn=save_card_def,inputs=[card_size_slider])
@@ -652,16 +506,6 @@ def add_tab():
         remove_favourite_btn.click(fn=removeFavourite, inputs=[favourite_temp])
         stylezquicksave_add.click(fn=None,_js="addQuicksave")
         stylezquicksave_clear.click(fn=None,_js="clearquicklist")
-        florence_generate_btn.click(
-            fn=wrap_gradio_gpu_call(FL.generate_prompt_fn),
-            inputs=[florence_image, florence_model_name, florence_max_new_token, florence_prompt_type],
-            outputs=[florence_tags, florence_html_tags],
-        )
-        florence_model_name.change(
-            fn=update_prompt_types,
-            inputs=florence_model_name,
-            outputs=florence_prompt_type,
-        )
     return [(ui, "stylez_menutab", "stylez_menutab")]
 
 script_callbacks.on_ui_tabs(add_tab)
