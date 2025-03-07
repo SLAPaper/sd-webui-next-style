@@ -626,3 +626,37 @@ function sendToARbox(width, height) {
         console.error("无法找到img2img_width或img2img_height元素");
     }
 }
+
+// 次代码仅作forge环境下与lobe主题插件的适配
+function processElements() {
+    // 删除lobe-theme插件显示的空白tab栏
+    const tabInterval = setInterval(function() {
+        const tabElement = document.querySelector('[data-node-key="tab_stylez_menutab"]');
+        if (tabElement) {
+            tabElement.remove();
+            console.log('Tab element removed.');
+            clearInterval(tabInterval); // 成功删除后清除轮询
+        }
+    }, 500); // 每500毫秒尝试一次
+
+    // 修改SVG元素的宽度和高度，并移动SVG元素
+    const interval = setInterval(function() {
+        // 选择包含SVG的容器
+        const container = document.querySelector('.gradio-dropdown.multiselect');
+        if (container) {
+            const svgElement = container.querySelector('svg.dropdown-arrow.svelte-xjn76a');
+            if (svgElement) {
+                // 修改SVG的宽度和高度属性
+                svgElement.setAttribute('width', '18px');
+                svgElement.setAttribute('height', '18px');
+                // 移动SVG元素：例如向右移动73px
+                svgElement.setAttribute('transform', 'translate(0, 0)');
+                console.log('SVG attributes updated and positioned.');
+                clearInterval(interval);
+            }
+        }
+    }, 500); // 每500毫秒尝试一次
+}
+
+// 调用处理函数
+processElements();
